@@ -1,6 +1,6 @@
 ![](assets/logo.jpeg)
 
-# Filtrado de nubes {#filtrado-nubes}
+# Filtrado de calidad {#filtrado-nubes}
 
 ![](assets/filter.png)
 

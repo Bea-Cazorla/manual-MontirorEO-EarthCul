@@ -6,23 +6,23 @@ Selecciona el método de agregación temporal para ejecutar tu análisis. Los m�
 
 ![](assets/interannualAggregation.png)
 
-## **Media**
+**Media**
 
 Calcula el **promedio** de los valores por año dentro del periodo de tiempo seleccionado.  
 
-## **Mediana**
+**Mediana**
 
 Calcula el **valor central** de los valores por año dentro del periodo de tiempo seleccionado. Es más resistente a valores extremos que la media.   
 
-## **Mínimo** 
+**Mínimo** 
 
 Calcula el **valor más bajo** por año en un periodo de tiempo.  
 
-## **Máximo** 
+**Máximo** 
 
 Calcula el **valor más alto** por año en un periodo de tiempo.  
 
-## **No calcular** 
+**No calcular** 
 
 No calcula agregaciones temporales por años.
 

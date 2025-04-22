@@ -6,7 +6,7 @@ Selecciona con qué sensor quieres trabajar. Los sensores disponibles poseen dis
 
 ![](assets/sensor_es.png)
 
-## **🛰️MODIS 250 m, 16 días**
+**🛰️MODIS 250 m, 16 días**
 
 MODIS (*Moderate Resolution Imaging Spectroradiometer*) es un sensor a bordo de los satélites Terra y Aqua de la NASA. 
 
@@ -18,7 +18,7 @@ Para esta interfaz, se han utilizado los datos de las colecciones **MODIS Terra*
 Estos satélites **proporcionan datos desde** el **24/02/2000 hasta la actualidad**, aunque la disponibilidad puede variar según la variable seleccionada.
 
 
-## **🛰️Landsat 30 m, \> 16 días** 
+**🛰️Landsat 30 m, \> 16 días** 
 
 La serie **Landsat** es operada por la NASA y el USGS. Estos datos incluyen Landsat 5, 7, 8 y 9\. 
 
@@ -33,7 +33,7 @@ El **rango de fechas** cubierto va desde **1984 hasta la actualidad**, dependien
 
 Entre el **05/05/2012 y el 18/03/2013**, no hay datos disponibles debido a la interrupción en la captura de imágenes de Landsat 7\. Aunque este satélite siguió operando, su utilidad estaba limitada desde 2003 por una falla en el Escáner de Línea de Mejora (ETM+). Debido a esta limitación, a partir de 2003 sus datos no se consideran en el rango completo de fechas disponibles.
 
-## **🛰️Sentinel-2 10m, 5 días** 
+**🛰️Sentinel-2 10m, 5 días** 
 
 El programa **Sentinel-2** es operado por la Agencia Espacial Europea (ESA) y forma parte del programa Copernicus. 
 
