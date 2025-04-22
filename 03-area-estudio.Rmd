@@ -17,7 +17,7 @@ Puedes seleccionar como área de estudio cualquiera de los **Parques Nacionales 
 
 ![](assets/np_es.png)
 
-## **📁 EarthCul**
+## **📁 Área de influencia socioeconómica parques EarthCul**
 
 Puedes seleccionar como área de estudio las zonas asociadas al proyecto:
 

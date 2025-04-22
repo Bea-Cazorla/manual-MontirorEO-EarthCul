@@ -3,9 +3,9 @@ bookdown::gitbook:
   config:
     toc:
       before: |
-        <li><a href="./">MonitorEO-OBSNEV</a></li>
+        <li><a href="./">MonitorEO-EarthCul</a></li>
       after: |
-        <li><a href="https://obsnev.es/" target="blank">MonitorEO-OBSNEV</a></li>
+        <li><a href="https://ugr.es/" target="blank">MonitorEO-EarthCul</a></li>
     edit: https://github.com/monitoreo-obsnev/manual/issues%s
     download: ["pdf", "epub"]
 bookdown::pdf_book:
@@ -16,3 +16,6 @@ bookdown::pdf_book:
   keep_tex: yes
 bookdown::epub_book: default
 bookdown::bs4_book: default
+output:
+  bookdown::gitbook:
+    css: style.css

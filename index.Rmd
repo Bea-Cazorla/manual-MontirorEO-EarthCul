@@ -1,9 +1,11 @@
---- 
+---
 title: "Manual de usuario de MonitorEO-EarthCul."
 author: "EarthCul PID2020-118041GB-I00."
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
-output: bookdown::gitbook
+output:
+  bookdown::gitbook:
+    css: style.css
 documentclass: book
 bibliography: [book.bib, packages.bib]
 biblio-style: apalike
@@ -11,7 +13,8 @@ link-citations: yes
 github-repo: monitoreo-earthcul.github.io/manual/
 description: "Documentación de la herramienta MonitorEO-EarthCul."
 ---
-![](assets/logo.jpeg)
+
+![Cabecera del manual](assets/logo.jpeg)
 
 # Introducción {#intro}
 

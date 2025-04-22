@@ -1,9 +1,11 @@
---- 
+---
 title: "Manual de usuario de MonitorEO-EarthCul."
 author: "EarthCul PID2020-118041GB-I00."
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
-output: bookdown::gitbook
+output:
+  bookdown::gitbook:
+    css: style.css
 documentclass: book
 bibliography: [book.bib, packages.bib]
 biblio-style: apalike
@@ -11,7 +13,8 @@ link-citations: yes
 github-repo: monitoreo-earthcul.github.io/manual/
 description: "Documentación de la herramienta MonitorEO-EarthCul."
 ---
-![](assets/logo.jpeg)
+
+![Cabecera del manual](assets/logo.jpeg)
 
 # Introducción {#intro}
 
@@ -82,7 +85,7 @@ Puedes seleccionar como área de estudio cualquiera de los **Parques Nacionales 
 
 ![](assets/np_es.png)
 
-## **📁 EarthCul**
+## **📁 Área de influencia socioeconómica parques EarthCul**
 
 Puedes seleccionar como área de estudio las zonas asociadas al proyecto:
 
@@ -331,19 +334,19 @@ Selecciona el intervalo temporal sobre el cual deseas realizar los cálculos. Pu
 
 ![](assets/aggregation_es.png)
 
-## **Original**
+**Original**
 
 Utiliza la frecuencia nativa del sensor (por ejemplo, diaria, 5 días, 16 días, etc.).
 
-## **Cada 16 días**
+**Cada 16 días**
 
 Agrupa las observaciones disponibles en intervalos de 16 días.
 
-## **Mensual**
+**Mensual**
 
 Resume los datos por mes.
 
-## **Anual**
+**Anual**
 
 Genera una única observación agregada por año.
 
@@ -444,7 +447,8 @@ Puedes establecer un % de nubosidad, que eliminará las escenas o imágenes que 
 
 <!--chapter:end:10-filtrado-nubes.Rmd-->
 
-![](assets/logo.jpeg)
+![Cabecera del manual](assets/logo.jpeg)
+
 
 # Generar mapas y gráficos de resultados {#mapas-graficos}
 

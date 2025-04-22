@@ -1,14 +1,7 @@
-p.caption {
-  color: #777;
-  margin-top: 10px;
-}
-p code {
-  white-space: inherit;
-}
-pre {
-  word-break: normal;
-  word-wrap: normal;
-}
-pre code {
-  white-space: inherit;
+.book .book-header {
+  background-image: url("assets/logo.jpeg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100px; /* puedes ajustar a 80px o lo que necesites */
 }

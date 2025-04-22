@@ -6,19 +6,19 @@ Selecciona el intervalo temporal sobre el cual deseas realizar los cálculos. Pu
 
 ![](assets/aggregation_es.png)
 
-## **Original**
+**Original**
 
 Utiliza la frecuencia nativa del sensor (por ejemplo, diaria, 5 días, 16 días, etc.).
 
-## **Cada 16 días**
+**Cada 16 días**
 
 Agrupa las observaciones disponibles en intervalos de 16 días.
 
-## **Mensual**
+**Mensual**
 
 Resume los datos por mes.
 
-## **Anual**
+**Anual**
 
 Genera una única observación agregada por año.
 
