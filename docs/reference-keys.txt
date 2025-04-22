@@ -2,12 +2,8 @@ intro
 interfaz
 idiomas
 area-estudio
-dibujar-tu-región-de-interés-roi---region-of-interest
-asset-público
-punto-específico-y-radio
-parque-nacional
-base-de-datos-mundial-sobre-zonas-protegidas-wdpa
-elige-un-proyecto
+parque-nacional-earthcul
+earthcul
 fechas
 selección-de-un-intervalo-específico
 tipo-variable

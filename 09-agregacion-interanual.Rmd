@@ -1,3 +1,5 @@
+![](assets/logo.jpeg)
+
 # Métrica de agregación temporal interanual {#agregacion-temporal-interanual}
 
 Selecciona el método de agregación temporal para ejecutar tu análisis. Los métodos de **agregación temporal** permiten **resumir datos** en períodos de tiempo utilizando diferentes técnicas estadísticas llamadas **reductores**. 

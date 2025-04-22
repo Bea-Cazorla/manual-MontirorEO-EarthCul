@@ -80,14 +80,14 @@
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \urlstyle{same}
 \hypersetup{
-  pdftitle={Manual de usuario de MonitorEO-OBSNEV},
-  pdfauthor={Observatorio de Cambio Global de Sierra Nevada (Universidad de Granada)},
+  pdftitle={Manual de usuario de MonitorEO-EarthCul.},
+  pdfauthor={EarthCul PID2020-118041GB-I00.},
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 
-\title{Manual de usuario de MonitorEO-OBSNEV}
-\author{Observatorio de Cambio Global de Sierra Nevada (Universidad de Granada)}
-\date{2025-04-10}
+\title{Manual de usuario de MonitorEO-EarthCul.}
+\author{EarthCul PID2020-118041GB-I00.}
+\date{2025-04-22}
 
 \begin{document}
 \maketitle
@@ -96,34 +96,30 @@
 \setcounter{tocdepth}{1}
 \tableofcontents
 }
+\includegraphics{assets/logo.jpeg}
+
 \chapter{Introducción}\label{intro}
 
-\href{https://sl.ugr.es/monitoreoobsnev}{MonitorEO-OBSNEV} es una herramienta de análisis de variables derivadas de teledetección satelital basada en Google Earth Engine desarrollada por el Observatorio de Cambio Global de Sierra Nevada (Universidad de Granada).
+MonitorEO-EarthCul es una herramienta de análisis de variables derivadas de teledetección satelital basada en Google Earth Engine desarrollada por proyecto EarthCul PID2020-118041GB-I00.
 
-Este manual de usuario proporciona una guía completa para el uso de MonitorEO-OBSNEV, incluyendo la descripción de funcionalidades, navegación por la interfaz, selección de parámetros y visualización de resultados.
+Este manual de usuario proporciona una guía completa para el uso de MonitorEO-EarthCul, incluyendo la descripción de funcionalidades, navegación por la interfaz, selección de parámetros y visualización de resultados.
 
-Este proyecto ha sido desarrollado en el marco del trabajo del Observatorio de Cambio Global de Sierra Nevada, de la Universidad de Granada, a través de los proyectos:
+Este proyecto ha sido financiado por el Ministerio de Ciencia e Innovación
 
-\begin{itemize}
-\item
-  EVEREST (PID2023-151939OB-I00), financiado por el Ministerio de Ciencia, Innovación y Universidades (MICIU) / Agencia Estatal de Investigación (AEI) 10.13039/501100011033, y cofinanciado por el Fondo Europeo de Desarrollo Regional (FEDER/ERDF -- Unión Europea).
-\item
-  ``Earth observations for the characterisation and monitoring of ecosystem functioning in Sierra Nevada (Spain)'' (C-EXP-074-UGR23), que ha sido cofinanciado por el Programa FEDER 2014-2020 y la Consejería de Economía, Conocimiento, Empresas y Universidad de la Junta de Andalucía.
-\end{itemize}
-
-\includegraphics{assets/logo-obs.png}
 \includegraphics{assets/logo-ugr.png}
-\includegraphics{assets/logo-ministerio.png}
+\includegraphics{assets/logo.jpeg}
 
-\chapter{Interfaz de MonitorEO-OBSNEV}\label{interfaz}
+\includegraphics{assets/logo.jpeg}
 
-La interfaz gráfica del \textbf{Laboratorio de Investigación Virtual MonitorEO-OBSNEV} (\emph{Monitoring with Earth Observations} del \textbf{Observatorio de Cambio Global de Sierra Nevada}) proporciona acceso a un sistema avanzado de monitoreo y alerta basado en datos de teledetección.
+\chapter{Interfaz de MonitorEO-EarthCul}\label{interfaz}
 
-Este sistema ha sido diseñado para la observación, análisis y evaluación de \textbf{variables esenciales de la biodiversidad (Essential Biodiversity Variables, EBVs)} vinculadas al funcionamiento y la estructura de los ecosistemas. La interfaz permite la exploración espacial y temporal de estas variables en diferentes regiones del planeta, con especial énfasis en áreas protegidas de montaña.
+La interfaz gráfica del \textbf{Laboratorio de Investigación Virtual MonitorEO-EarthCul} (\emph{Monitoring with Earth Observations} del \textbf{Proyecto EarthCul PID2020-118041GB-I00}) ha sido diseñado para la observación, análisis y evaluación de \textbf{servicios ecosistémicos culturales}. La interfaz permite la exploración espacial y temporal de las cartografías generadas por el proyecto en diferentes áreas protegidas de montaña.
 
 MonitorEO-OBSNEV integra colecciones de datos satelitales, herramientas de análisis geoespacial y una interfaz interactiva que facilita su uso tanto en estudios científicos como en aplicaciones de gestión.
 
 \includegraphics{assets/InterfazMonitorEO_es.png}
+
+\includegraphics{assets/logo.jpeg}
 
 \chapter{Idiomas}\label{idiomas}
 
@@ -146,97 +142,35 @@ MonitorEO-OBSNEV integra colecciones de datos satelitales, herramientas de anál
   Deutsch
 \end{itemize}
 
+\includegraphics{assets/logo.jpeg}
+
 \chapter{Área de estudio}\label{area-estudio}
 
 \textbf{Selecciona ROI-- Elige tu área de estudio.}
 
-En esta sección puedes definir la \textbf{región de interés (ROI)} sobre la que se realizará el análisis. Tienes varias opciones disponibles para seleccionar o cargar tu área de estudio. Por defecto, la herramienta está configurada para dibujar polígonos personalizados. Para cambiar el tipo de geometría (por ejemplo, a punto o rectángulo), accede al menú de opciones de dibujo antes de definir la región de interés.
+En esta sección puedes definir la \textbf{región de interés (ROI)} sobre la que se realizará el análisis. Tienes varias opciones disponibles para seleccionar o cargar tu área de estudio.
 
 \includegraphics{assets/ROI_es.png}
 
-\section{\texorpdfstring{\textbf{🖊️ Dibujar tu región de interés (ROI - Region of Interest)}}{🖊️ Dibujar tu región de interés (ROI - Region of Interest)}}\label{dibujar-tu-regiuxf3n-de-interuxe9s-roi---region-of-interest}
-
-Puedes dibujar regiones manualmente usando esta opción. Cuando dibujas una región (punto, línea o polígono), esta se almacena como un objeto Geometry que aparecerá como capa en la parte superior izquierda del mapa.
-
-\includegraphics{assets/dibujado.png}
-
-\section{\texorpdfstring{\textbf{📂 Asset público}}{📂 Asset público}}\label{asset-puxfablico}
-
-Puedes cargar un área de estudio que haya sido previamente subida a Google Earth Engine, indicando en la app la ruta del asset, es decir, la dirección única donde se encuentra almacenado el recurso dentro de tu cuenta de GEE (puede tratarse de una imagen, colección, tabla o carpeta).
-
-Esta ruta suele tener el siguiente formato:
-
-\begin{itemize}
-\tightlist
-\item
-  \textbf{\texttt{users/tu\_usuario/nombre\_del\_asset}}
-\end{itemize}
-
-\includegraphics{assets/asset_es.png}
-Desde tu cuenta de Google Earth Engien, debes asegurarte de:
-
-\begin{itemize}
-\tightlist
-\item
-  Copiar y pegar correctamente esta ruta para que el recurso pueda cargarse sin errores.
-\end{itemize}
-
-\includegraphics{assets/asset1_es.png}
-
-\begin{itemize}
-\tightlist
-\item
-  Compartir el asset como público.
-\end{itemize}
-
-\includegraphics{assets/asset_2.png}
-
-\section{\texorpdfstring{\textbf{📌Punto específico y radio}}{📌Punto específico y radio}}\label{punto-especuxedfico-y-radio}
-
-Puedes introducir coordenadas de \textbf{latitud} y \textbf{longitud} para definir una ubicación exacta sobre la superficie terrestre. A partir de ese punto, se puede generar un área circular (\textbf{buffer}) cuyo \textbf{radio, en metros, es definido por el usuario}. Esta funcionalidad permite delimitar zonas de interés alrededor de un punto específico para su análisis.
-
-Latitud: Ingresa la coordenada decimal de latitud (por ejemplo: -37.6009).
-Usa el punto (.) como separador decimal. No uses comas ni símbolos adicionales.
-
-Longitud: Ingresa la coordenada decimal de longitud (por ejemplo: -63.854).
-También debe estar en formato decimal con punto. Recuerda tener en cuenta el símbolo negativo si es necesario.
-
-Radio: Introduce el radio en metros (por ejemplo: 1000 para un kilómetro).
-
-\includegraphics{assets/buffer_es1.png}
-
-\section{\texorpdfstring{\textbf{🏞️ Parque Nacional}}{🏞️ Parque Nacional}}\label{parque-nacional}
+\section{\texorpdfstring{\textbf{🏞️ Parque Nacional EarthCul}}{🏞️ Parque Nacional EarthCul}}\label{parque-nacional-earthcul}
 
 Puedes seleccionar como área de estudio cualquiera de los \textbf{Parques Nacionales de España y Portugal} disponibles en la plataforma.
 
 \includegraphics{assets/np_es.png}
 
-\section{\texorpdfstring{\textbf{🌍 Base de datos mundial sobre zonas protegidas WDPA}}{🌍 Base de datos mundial sobre zonas protegidas WDPA}}\label{base-de-datos-mundial-sobre-zonas-protegidas-wdpa}
+\section{\texorpdfstring{\textbf{📁 EarthCul}}{📁 EarthCul}}\label{earthcul}
 
-World Database on Protected Areas (WDPA), es la fuente más completa y actualizada de información geoespacial sobre áreas protegidas a nivel global. Gestionada por ONU Medio Ambiente y el Centro de Monitoreo de la Conservación del Medio Ambiente (UNEP-WCMC), proporciona datos detallados sobre parques nacionales, reservas naturales y otras zonas protegidas.
-
-Para seleccionar un área protegida mediante su ID, puedes acceder a la base de datos a través del sitio web oficial de Protected Planet (\href{https://www.protectedplanet.net/}{🔗 protectedplanet.net}). Allí, puedes buscar áreas protegidas por nombre, país o categoría de protección y obtener su identificador único (WDPA ID).
-
-\includegraphics{assets/WDPA_es.png}
-\includegraphics{assets/WDPA2.png}
-
-\section{\texorpdfstring{\textbf{📁 Elige un proyecto}}{📁 Elige un proyecto}}\label{elige-un-proyecto}
-
-Puedes seleccionar como área de estudio las zonas asociadas a los distintos proyectos desarrollados en el marco de \textbf{OBSNEV}. Cada uno de ellos define áreas específicas con distintos enfoques temáticos:
+Puedes seleccionar como área de estudio las zonas asociadas al proyecto:
 
 \begin{itemize}
 \tightlist
 \item
-  \textbf{EarthCul}: Áreas de influencia socioeconómica de los Parques Nacionales de montaña en España y Portugal.\\
-\item
-  \textbf{EVEREST}: Parques Nacionales de montaña de España y Portugal.\\
-\item
-  \textbf{PRESINMED}\\
-\item
-  \textbf{BioRefuges}
+  \textbf{EarthCul}: Áreas de influencia socioeconómica de los Parques Nacionales de montaña en España y Portugal.
 \end{itemize}
 
 \includegraphics{assets/PROJECTS_es.png}
+
+\includegraphics{assets/logo.jpeg}
 
 \chapter{Fechas de inicio y fin}\label{fechas}
 
@@ -267,6 +201,8 @@ Si seleccionas:
 \end{itemize}
 
 Se analizarán sólo los días comprendidos entre el 21 de marzo y el 21 de septiembre en cada uno de esos años, excluyendo el resto.
+
+\includegraphics{assets/logo.jpeg}
 
 \chapter{Tipo de variable de interés}\label{tipo-variable}
 
@@ -442,6 +378,8 @@ Cantidad de aerosoles en la columna total atmosférica. Sirve para cuantificar c
 
 Unidades: sin unidad.
 
+\includegraphics{assets/logo.jpeg}
+
 \chapter{Sensor satelital}\label{sensor}
 
 Selecciona con qué sensor quieres trabajar. Los sensores disponibles poseen distinta resolución temporal y espacial. Dependiendo de la variable elegida, obtendrás disponibilidad de datos para unos u otros sensores.
@@ -485,6 +423,8 @@ En esta interfaz, utilizamos el producto \textbf{SR Harmonized}, un producto de 
 
 El \textbf{rango de fechas} de este sensor va desde \textbf{28/03/2017 hasta la actualidad.}
 
+\includegraphics{assets/logo.jpeg}
+
 \chapter{Unidad de agregación temporal}\label{ud-agregacion-temporal}
 
 Selecciona el intervalo temporal sobre el cual deseas realizar los cálculos. Puedes mantener la \textbf{resolución temporal original del sensor} o aplicar una \textbf{agregación periódica} para facilitar el análisis:
@@ -511,6 +451,8 @@ La agregación temporal permite suavizar variaciones de corto plazo, facilitar
 comparaciones entre periodos, reducir la influencia de datos atípicos o evitar la
 perdida de información ocasionado por la presencia de nubes en el área de interés en
 fechas concretas.
+
+\includegraphics{assets/logo.jpeg}
 
 \chapter{Métrica de agregación temporal}\label{agregacion-temporal}
 
@@ -546,6 +488,8 @@ Encuentra el valor por debajo del cual está el \textbf{10\% de los datos}. Se u
 
 Encuentra el valor por debajo del cual está el \textbf{90\% de los datos}. Se usa para medir \textbf{valores altos} o eventos extremos.
 
+\includegraphics{assets/logo.jpeg}
+
 \chapter{Métrica de agregación temporal interanual}\label{agregacion-temporal-interanual}
 
 Selecciona el método de agregación temporal para ejecutar tu análisis. Los métodos de \textbf{agregación temporal} permiten \textbf{resumir datos} en períodos de tiempo utilizando diferentes técnicas estadísticas llamadas \textbf{reductores}.
@@ -572,6 +516,8 @@ Calcula el \textbf{valor más alto} por año en un periodo de tiempo.
 
 No calcula agregaciones temporales por años.
 
+\includegraphics{assets/logo.jpeg}
+
 \chapter{Filtrado de nubes}\label{filtrado-nubes}
 
 \includegraphics{assets/filter.png}
@@ -579,6 +525,8 @@ No calcula agregaciones temporales por años.
 Al activar esta casilla, se aplicará un \textbf{filtrado de nubes por escena}. El filtrado de nubes por escena es un proceso utilizado en el análisis de imágenes satelitales para eliminar o reducir la interferencia causada por la presencia de nubes en cada imagen, mejorando la calidad de los datos. Como resultado, los análisis reflejarán con mayor precisión las características reales de la superficie terrestre.
 
 Puedes establecer un \% de nubosidad, que eliminará las escenas o imágenes que superen el umbral establecido.
+
+\includegraphics{assets/logo.jpeg}
 
 \chapter{Generar mapas y gráficos de resultados}\label{mapas-graficos}
 

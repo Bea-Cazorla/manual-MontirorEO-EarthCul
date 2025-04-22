@@ -1,3 +1,5 @@
+![](assets/logo.jpeg)
+
 # Filtrado de nubes {#filtrado-nubes}
 
 ![](assets/filter.png)
