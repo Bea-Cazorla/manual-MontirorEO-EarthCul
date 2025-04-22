@@ -8,7 +8,7 @@ documentclass: book
 bibliography: [book.bib, packages.bib]
 biblio-style: apalike
 link-citations: yes
-github-repo: monitoreo-obsnev/manual
+github-repo: monitoreo-earthcul.github.io/manual/
 description: "Documentación de la herramienta MonitorEO-EarthCul."
 ---
 ![](assets/logo.jpeg)
@@ -22,5 +22,5 @@ Este manual de usuario proporciona una guía completa para el uso de MonitorEO-E
 Este proyecto ha sido financiado por el Ministerio de Ciencia e Innovación
 
 
-![](assets/logo-ugr.png)
 ![](assets/logo.jpeg)
+![](assets/logo-ugr.png)

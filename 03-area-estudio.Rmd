@@ -1,5 +1,6 @@
 ![](assets/logo.jpeg)
 
+
 # Área de estudio {#area-estudio}
 
 **Selecciona ROI– Elige tu área de estudio.** 

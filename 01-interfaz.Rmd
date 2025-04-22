@@ -2,8 +2,8 @@
 
 # Interfaz de MonitorEO-EarthCul {#interfaz}
 
-La interfaz gráfica del **Laboratorio de Investigación Virtual MonitorEO-EarthCul** (*Monitoring with Earth Observations* del **Proyecto EarthCul PID2020-118041GB-I00**) ha sido diseñado para la observación, análisis y evaluación de **servicios ecosistémicos culturales**. La interfaz permite la exploración espacial y temporal de las cartografías generadas por el proyecto en diferentes áreas protegidas de montaña.
+La interfaz gráfica del **Laboratorio de Investigación Virtual MonitorEO-EarthCul** (*Monitoring with Earth Observations* del **Proyecto EarthCul PID2020-118041GB-I00**) ha sido diseñado para la observación de **servicios ecosistémicos culturales**. La interfaz permite la exploración espacial y temporal de las cartografías generadas por el proyecto en diferentes áreas protegidas de montaña.
 
-MonitorEO-OBSNEV integra colecciones de datos satelitales, herramientas de análisis geoespacial y una interfaz interactiva que facilita su uso tanto en estudios científicos como en aplicaciones de gestión.
+MonitorEO-EarthCul integra colecciones de datos satelitales, herramientas de análisis geoespacial y una interfaz interactiva que facilita su uso tanto en estudios científicos como en aplicaciones de gestión.
 
 ![](assets/InterfazMonitorEO_es.png)

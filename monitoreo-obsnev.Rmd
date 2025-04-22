@@ -8,7 +8,7 @@ documentclass: book
 bibliography: [book.bib, packages.bib]
 biblio-style: apalike
 link-citations: yes
-github-repo: monitoreo-obsnev/manual
+github-repo: monitoreo-earthcul.github.io/manual/
 description: "Documentación de la herramienta MonitorEO-EarthCul."
 ---
 ![](assets/logo.jpeg)
@@ -22,8 +22,8 @@ Este manual de usuario proporciona una guía completa para el uso de MonitorEO-E
 Este proyecto ha sido financiado por el Ministerio de Ciencia e Innovación
 
 
-![](assets/logo-ugr.png)
 ![](assets/logo.jpeg)
+![](assets/logo-ugr.png)
 
 <!--chapter:end:index.Rmd-->
 
@@ -31,9 +31,9 @@ Este proyecto ha sido financiado por el Ministerio de Ciencia e Innovación
 
 # Interfaz de MonitorEO-EarthCul {#interfaz}
 
-La interfaz gráfica del **Laboratorio de Investigación Virtual MonitorEO-EarthCul** (*Monitoring with Earth Observations* del **Proyecto EarthCul PID2020-118041GB-I00**) ha sido diseñado para la observación, análisis y evaluación de **servicios ecosistémicos culturales**. La interfaz permite la exploración espacial y temporal de las cartografías generadas por el proyecto en diferentes áreas protegidas de montaña.
+La interfaz gráfica del **Laboratorio de Investigación Virtual MonitorEO-EarthCul** (*Monitoring with Earth Observations* del **Proyecto EarthCul PID2020-118041GB-I00**) ha sido diseñado para la observación de **servicios ecosistémicos culturales**. La interfaz permite la exploración espacial y temporal de las cartografías generadas por el proyecto en diferentes áreas protegidas de montaña.
 
-MonitorEO-OBSNEV integra colecciones de datos satelitales, herramientas de análisis geoespacial y una interfaz interactiva que facilita su uso tanto en estudios científicos como en aplicaciones de gestión.
+MonitorEO-EarthCul integra colecciones de datos satelitales, herramientas de análisis geoespacial y una interfaz interactiva que facilita su uso tanto en estudios científicos como en aplicaciones de gestión.
 
 ![](assets/InterfazMonitorEO_es.png)
 
@@ -65,6 +65,7 @@ Deutsch
 
 ![](assets/logo.jpeg)
 
+
 # Área de estudio {#area-estudio}
 
 **Selecciona ROI– Elige tu área de estudio.** 
@@ -94,6 +95,7 @@ Puedes seleccionar como área de estudio las zonas asociadas al proyecto:
 
 ![](assets/logo.jpeg)
 
+
 # Fechas de inicio y fin {#fechas}
 
 Elige el rango de fechas para realizar tus cálculos. Primero, establece el **año de inicio** y el **año de fin**. Luego, selecciona el **mes y día de inicio**, así como el **mes y día de finalización** para definir el período de análisis.
@@ -122,6 +124,7 @@ Se analizarán sólo los días comprendidos entre el 21 de marzo y el 21 de sept
 <!--chapter:end:04-periodo.Rmd-->
 
 ![](assets/logo.jpeg)
+
 
 # Tipo de variable de interés {#tipo-variable}
 
