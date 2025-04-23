@@ -1,220 +1,89 @@
-<!DOCTYPE html>
-<html lang="" xml:lang="">
+<!doctype html>
+<html lang="en">
 <head>
-
   <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Manual de usuario de MonitorEO-EarthCul.</title>
-  <meta name="description" content="Documentación de la herramienta MonitorEO-EarthCul." />
-  <meta name="generator" content="bookdown #bookdown:version# and GitBook 2.6.7" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+  <title>Manual de usuario de MonitorEO-EarthCul.</title>
+
+    <meta name="author" content="EarthCul PID2020-118041GB-I00." />
+  
+   <meta name="description" content="Documentación de la herramienta MonitorEO-EarthCul." />
+   <meta name="generator" content="placeholder" />
   <meta property="og:title" content="Manual de usuario de MonitorEO-EarthCul." />
   <meta property="og:type" content="book" />
   
+  
   <meta property="og:description" content="Documentación de la herramienta MonitorEO-EarthCul." />
-  <meta name="github-repo" content="monitoreo-earthcul.github.io/manual/" />
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Manual de usuario de MonitorEO-EarthCul." />
   
   <meta name="twitter:description" content="Documentación de la herramienta MonitorEO-EarthCul." />
   
+  <!-- JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script>
+    <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet" />
+    <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script>
+    <script src="libs/bs3compat-0.9.0/transition.js"></script>
+    <script src="libs/bs3compat-0.9.0/tabs.js"></script>
+    <script src="libs/bs3compat-0.9.0/bs3compat.js"></script>
+    <link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet" />
+    <script src="libs/bs4_book-1.0.0/bs4_book.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script>
 
-<meta name="author" content="EarthCul PID2020-118041GB-I00." />
-
-
-<meta name="date" content="2025-04-23" />
-
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-  
-  
-<!--bookdown:link_prev-->
-<!--bookdown:link_next-->
-<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
-<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
-<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
-<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
-<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
-<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
-<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
-<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
-<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
-<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
-<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
-<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
-<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
-<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
-<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
-<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
-
-
-
-<style type="text/css">
-  
-  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-</style>
-
-<link rel="stylesheet" href="style.css" type="text/css" />
+  <!-- CSS -->
+  <style type="text/css">
+    
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  </style>
+    
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#toc">
 
-
-
+<div class="container-fluid">
 <!--bookdown:title:start-->
-<div id="header">
-<h1 class="title">Manual de usuario de MonitorEO-EarthCul.</h1>
-<p class="author"><em>EarthCul PID2020-118041GB-I00.</em></p>
-<p class="date"><em>2025-04-23</em></p>
-</div>
 <!--bookdown:title:end-->
 
 <!--bookdown:toc:start-->
-  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+<div class="row">
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book">
+    <a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
 
-    <div class="book-summary">
-      <nav role="navigation">
-<!--bookdown:toc2:start-->
-<ul>
-<li><a href="#intro" id="toc-intro"><span class="toc-section-number">1</span> Introducción</a></li>
-<li><a href="#interfaz" id="toc-interfaz"><span class="toc-section-number">2</span> Interfaz de MonitorEO-EarthCul</a></li>
-<li><a href="#idiomas" id="toc-idiomas"><span class="toc-section-number">3</span> Idiomas</a></li>
-<li><a href="#area-estudio" id="toc-area-estudio"><span class="toc-section-number">4</span> Área de estudio</a>
-<ul>
-<li><a href="#parque-nacional-earthcul" id="toc-parque-nacional-earthcul"><span class="toc-section-number">4.1</span> <strong>🏞️ Parque Nacional EarthCul</strong></a></li>
-<li><a href="#área-de-influencia-socioeconómica-parques-earthcul" id="toc-área-de-influencia-socioeconómica-parques-earthcul"><span class="toc-section-number">4.2</span> <strong>📁 Área de influencia socioeconómica parques EarthCul</strong></a></li>
-</ul></li>
-<li><a href="#fechas" id="toc-fechas"><span class="toc-section-number">5</span> Fechas de inicio y fin</a>
-<ul>
-<li><a href="#selección-de-un-intervalo-específico" id="toc-selección-de-un-intervalo-específico"><span class="toc-section-number">5.1</span> <strong>📆Selección de un intervalo específico</strong></a></li>
-</ul></li>
-<li><a href="#tipo-variable" id="toc-tipo-variable"><span class="toc-section-number">6</span> Tipo de variable de interés</a>
-<ul>
-<li><a href="#carbono-orgánico-producción-primaria" id="toc-carbono-orgánico-producción-primaria"><span class="toc-section-number">6.1</span> <strong>🌱 Carbono Orgánico (Producción Primaria)</strong></a>
-<ul>
-<li><a href="#ndvi---índice-de-vegetación-de-diferencia-normalizada" id="toc-ndvi---índice-de-vegetación-de-diferencia-normalizada"><span class="toc-section-number">6.1.1</span> <strong>NDVI</strong> - Índice de Vegetación de Diferencia Normalizada</a></li>
-<li><a href="#evi---índice-de-vegetación-mejorado" id="toc-evi---índice-de-vegetación-mejorado"><span class="toc-section-number">6.1.2</span> <strong>EVI</strong> - Índice de Vegetación Mejorado</a></li>
-<li><a href="#chl-a---concentración-de-clorofila" id="toc-chl-a---concentración-de-clorofila"><span class="toc-section-number">6.1.3</span> <strong>Chl-a</strong> - Concentración de clorofila</a></li>
-</ul></li>
-<li><a href="#balance-de-radiación" id="toc-balance-de-radiación"><span class="toc-section-number">6.2</span> <strong>🌞 Balance de Radiación</strong></a>
-<ul>
-<li><a href="#alb---albedo" id="toc-alb---albedo"><span class="toc-section-number">6.2.1</span> <strong>ALB</strong> - Albedo</a></li>
-</ul></li>
-<li><a href="#balance-de-agua" id="toc-balance-de-agua"><span class="toc-section-number">6.3</span> <strong>💧Balance de Agua</strong></a>
-<ul>
-<li><a href="#et---evapotranspiración" id="toc-et---evapotranspiración"><span class="toc-section-number">6.3.1</span> <strong>ET</strong> - Evapotranspiración</a></li>
-<li><a href="#le---calor-latente" id="toc-le---calor-latente"><span class="toc-section-number">6.3.2</span> <strong>LE</strong> - Calor Latente</a></li>
-<li><a href="#lswi---índice-de-agua-superficial-terrestre" id="toc-lswi---índice-de-agua-superficial-terrestre"><span class="toc-section-number">6.3.3</span> <strong>LSWI</strong> - Índice de Agua Superficial Terrestre</a></li>
-<li><a href="#ndwi---índice-de-agua-de-diferencia-normalizada" id="toc-ndwi---índice-de-agua-de-diferencia-normalizada"><span class="toc-section-number">6.3.4</span> <strong>NDWI</strong> - Índice de Agua de Diferencia Normalizada</a></li>
-<li><a href="#ndsi---índice-de-nieve-de-diferencia-normalizada" id="toc-ndsi---índice-de-nieve-de-diferencia-normalizada"><span class="toc-section-number">6.3.5</span> <strong>NDSI</strong> - Índice de Nieve de Diferencia Normalizada</a></li>
-</ul></li>
-<li><a href="#calor-sensible" id="toc-calor-sensible"><span class="toc-section-number">6.4</span> <strong>🌡️ Calor Sensible</strong></a>
-<ul>
-<li><a href="#lst--temperatura-superficial" id="toc-lst--temperatura-superficial"><span class="toc-section-number">6.4.1</span> <strong>LST</strong> -Temperatura Superficial</a></li>
-</ul></li>
-<li><a href="#nutrientes-aerosoles" id="toc-nutrientes-aerosoles"><span class="toc-section-number">6.5</span> <strong>💨 Nutrientes / Aerosoles</strong></a>
-<ul>
-<li><a href="#arsl---profundidad-óptica-atmosférica-de-aerosoles" id="toc-arsl---profundidad-óptica-atmosférica-de-aerosoles"><span class="toc-section-number">6.5.1</span> <strong>ARSL</strong> - Profundidad óptica atmosférica de aerosoles</a></li>
-</ul></li>
-</ul></li>
-<li><a href="#sensor" id="toc-sensor"><span class="toc-section-number">7</span> Sensor satelital</a></li>
-<li><a href="#ud-agregacion-temporal" id="toc-ud-agregacion-temporal"><span class="toc-section-number">8</span> Unidad de agregación temporal</a></li>
-<li><a href="#agregacion-temporal" id="toc-agregacion-temporal"><span class="toc-section-number">9</span> Métrica de agregación temporal</a></li>
-<li><a href="#agregacion-temporal-interanual" id="toc-agregacion-temporal-interanual"><span class="toc-section-number">10</span> Métrica de agregación temporal interanual</a></li>
-<li><a href="#filtrado-nubes" id="toc-filtrado-nubes"><span class="toc-section-number">11</span> Filtrado de calidad</a></li>
-<li><a href="#mapas-graficos" id="toc-mapas-graficos"><span class="toc-section-number">12</span> Generar mapas y gráficos de resultados</a>
-<ul>
-<li><a href="#calcular" id="toc-calcular"><span class="toc-section-number">12.1</span> <strong>Calcular</strong></a></li>
-<li><a href="#seleccionar-capa" id="toc-seleccionar-capa"><span class="toc-section-number">12.2</span> <strong>Seleccionar capa</strong></a></li>
-<li><a href="#añadir-al-mapa" id="toc-añadir-al-mapa"><span class="toc-section-number">12.3</span> <strong>Añadir al mapa</strong></a></li>
-<li><a href="#gráfico-roi" id="toc-gráfico-roi"><span class="toc-section-number">12.4</span> <strong>Gráfico ROI</strong></a></li>
-<li><a href="#gráfico-pixel" id="toc-gráfico-pixel"><span class="toc-section-number">12.5</span> <strong>Gráfico Pixel</strong></a></li>
-</ul></li>
-<li><a href="#intro" id="toc-intro"><span class="toc-section-number">13</span> Introducción</a></li>
-<li><a href="#interfaz" id="toc-interfaz"><span class="toc-section-number">14</span> Interfaz de MonitorEO-EarthCul</a></li>
-<li><a href="#idiomas" id="toc-idiomas"><span class="toc-section-number">15</span> Idiomas</a></li>
-<li><a href="#area-estudio" id="toc-area-estudio"><span class="toc-section-number">16</span> Área de estudio</a>
-<ul>
-<li><a href="#parque-nacional-earthcul-1" id="toc-parque-nacional-earthcul-1"><span class="toc-section-number">16.1</span> <strong>🏞️ Parque Nacional EarthCul</strong></a></li>
-<li><a href="#área-de-influencia-socioeconómica-parques-earthcul-1" id="toc-área-de-influencia-socioeconómica-parques-earthcul-1"><span class="toc-section-number">16.2</span> <strong>📁 Área de influencia socioeconómica parques EarthCul</strong></a></li>
-</ul></li>
-<li><a href="#fechas" id="toc-fechas"><span class="toc-section-number">17</span> Fechas de inicio y fin</a>
-<ul>
-<li><a href="#selección-de-un-intervalo-específico-1" id="toc-selección-de-un-intervalo-específico-1"><span class="toc-section-number">17.1</span> <strong>📆Selección de un intervalo específico</strong></a></li>
-</ul></li>
-<li><a href="#tipo-variable" id="toc-tipo-variable"><span class="toc-section-number">18</span> Tipo de variable de interés</a>
-<ul>
-<li><a href="#carbono-orgánico-producción-primaria-1" id="toc-carbono-orgánico-producción-primaria-1"><span class="toc-section-number">18.1</span> <strong>🌱 Carbono Orgánico (Producción Primaria)</strong></a>
-<ul>
-<li><a href="#ndvi---índice-de-vegetación-de-diferencia-normalizada-1" id="toc-ndvi---índice-de-vegetación-de-diferencia-normalizada-1"><span class="toc-section-number">18.1.1</span> <strong>NDVI</strong> - Índice de Vegetación de Diferencia Normalizada</a></li>
-<li><a href="#evi---índice-de-vegetación-mejorado-1" id="toc-evi---índice-de-vegetación-mejorado-1"><span class="toc-section-number">18.1.2</span> <strong>EVI</strong> - Índice de Vegetación Mejorado</a></li>
-<li><a href="#chl-a---concentración-de-clorofila-1" id="toc-chl-a---concentración-de-clorofila-1"><span class="toc-section-number">18.1.3</span> <strong>Chl-a</strong> - Concentración de clorofila</a></li>
-</ul></li>
-<li><a href="#balance-de-radiación-1" id="toc-balance-de-radiación-1"><span class="toc-section-number">18.2</span> <strong>🌞 Balance de Radiación</strong></a>
-<ul>
-<li><a href="#alb---albedo-1" id="toc-alb---albedo-1"><span class="toc-section-number">18.2.1</span> <strong>ALB</strong> - Albedo</a></li>
-</ul></li>
-<li><a href="#balance-de-agua-1" id="toc-balance-de-agua-1"><span class="toc-section-number">18.3</span> <strong>💧Balance de Agua</strong></a>
-<ul>
-<li><a href="#et---evapotranspiración-1" id="toc-et---evapotranspiración-1"><span class="toc-section-number">18.3.1</span> <strong>ET</strong> - Evapotranspiración</a></li>
-<li><a href="#le---calor-latente-1" id="toc-le---calor-latente-1"><span class="toc-section-number">18.3.2</span> <strong>LE</strong> - Calor Latente</a></li>
-<li><a href="#lswi---índice-de-agua-superficial-terrestre-1" id="toc-lswi---índice-de-agua-superficial-terrestre-1"><span class="toc-section-number">18.3.3</span> <strong>LSWI</strong> - Índice de Agua Superficial Terrestre</a></li>
-<li><a href="#ndwi---índice-de-agua-de-diferencia-normalizada-1" id="toc-ndwi---índice-de-agua-de-diferencia-normalizada-1"><span class="toc-section-number">18.3.4</span> <strong>NDWI</strong> - Índice de Agua de Diferencia Normalizada</a></li>
-<li><a href="#ndsi---índice-de-nieve-de-diferencia-normalizada-1" id="toc-ndsi---índice-de-nieve-de-diferencia-normalizada-1"><span class="toc-section-number">18.3.5</span> <strong>NDSI</strong> - Índice de Nieve de Diferencia Normalizada</a></li>
-</ul></li>
-<li><a href="#calor-sensible-1" id="toc-calor-sensible-1"><span class="toc-section-number">18.4</span> <strong>🌡️ Calor Sensible</strong></a>
-<ul>
-<li><a href="#lst--temperatura-superficial-1" id="toc-lst--temperatura-superficial-1"><span class="toc-section-number">18.4.1</span> <strong>LST</strong> -Temperatura Superficial</a></li>
-</ul></li>
-<li><a href="#nutrientes-aerosoles-1" id="toc-nutrientes-aerosoles-1"><span class="toc-section-number">18.5</span> <strong>💨 Nutrientes / Aerosoles</strong></a>
-<ul>
-<li><a href="#arsl---profundidad-óptica-atmosférica-de-aerosoles-1" id="toc-arsl---profundidad-óptica-atmosférica-de-aerosoles-1"><span class="toc-section-number">18.5.1</span> <strong>ARSL</strong> - Profundidad óptica atmosférica de aerosoles</a></li>
-</ul></li>
-</ul></li>
-<li><a href="#sensor" id="toc-sensor"><span class="toc-section-number">19</span> Sensor satelital</a></li>
-<li><a href="#ud-agregacion-temporal" id="toc-ud-agregacion-temporal"><span class="toc-section-number">20</span> Unidad de agregación temporal</a></li>
-<li><a href="#agregacion-temporal" id="toc-agregacion-temporal"><span class="toc-section-number">21</span> Métrica de agregación temporal</a></li>
-<li><a href="#agregacion-temporal-interanual" id="toc-agregacion-temporal-interanual"><span class="toc-section-number">22</span> Métrica de agregación temporal interanual</a></li>
-<li><a href="#filtrado-nubes" id="toc-filtrado-nubes"><span class="toc-section-number">23</span> Filtrado de calidad</a></li>
-<li><a href="#mapas-graficos" id="toc-mapas-graficos"><span class="toc-section-number">24</span> Generar mapas y gráficos de resultados</a>
-<ul>
-<li><a href="#calcular-1" id="toc-calcular-1"><span class="toc-section-number">24.1</span> <strong>Calcular</strong></a></li>
-<li><a href="#seleccionar-capa-1" id="toc-seleccionar-capa-1"><span class="toc-section-number">24.2</span> <strong>Seleccionar capa</strong></a></li>
-<li><a href="#añadir-al-mapa-1" id="toc-añadir-al-mapa-1"><span class="toc-section-number">24.3</span> <strong>Añadir al mapa</strong></a></li>
-<li><a href="#gráfico-roi-1" id="toc-gráfico-roi-1"><span class="toc-section-number">24.4</span> <strong>Gráfico ROI</strong></a></li>
-<li><a href="#gráfico-pixel-1" id="toc-gráfico-pixel-1"><span class="toc-section-number">24.5</span> <strong>Gráfico Pixel</strong></a></li>
-</ul></li>
-</ul>
-<!--bookdown:toc2:end-->
-      </nav>
+    <div class="d-flex align-items-start justify-content-between">
+      <h1>
+        <a href="index.html" title="">Manual de usuario de MonitorEO-EarthCul.</a>
+      </h1>
+      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
     </div>
 
-    <div class="book-body">
-      <div class="body-inner">
-        <div class="book-header" role="navigation">
-          <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Manual de usuario de MonitorEO-EarthCul.</a>
-          </h1>
+    <div id="main-nav" class="collapse-lg">
+      <form role="search">
+        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+      </form>
+
+      <nav aria-label="Table of contents">
+        <h2>Table of contents</h2>
+        <div id="book-toc"></div>
+
+        <div class="book-extra">
+          <p><a id="book-repo" href="#">View book source <i class="fab fa-github"></i></a></li></p>
         </div>
+      </nav>
+    </div>
+  </header>
 
-        <div class="page-wrapper" tabindex="-1" role="main">
-          <div class="page-inner">
-
-            <section class="normal" id="section-">
+  <main class="col-sm-12 col-md-9 col-lg-7" id="content">
 <!--bookdown:toc:end-->
 <!--bookdown:body:start-->
-<div class="float">
-<img src="assets/logoe.png" alt="Cabecera del manual" />
-<div class="figcaption">Cabecera del manual</div>
-</div>
-<div id="intro" class="section level1 hasAnchor" number="1">
-<h1 class="hasAnchor"><span class="header-section-number">1</span> Introducción<a href="#intro" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="intro" class="section level1" number="1">
+<h1><span class="header-section-number">1</span> Introducción</h1>
 <p>MonitorEO-EarthCul es una herramienta de análisis de variables derivadas de teledetección satelital basada en Google Earth Engine desarrollada por proyecto EarthCul PID2020-118041GB-I00.</p>
 <p>Este manual de usuario proporciona una guía completa para el uso de MonitorEO-EarthCul, incluyendo la descripción de funcionalidades, navegación por la interfaz, selección de parámetros y visualización de resultados.</p>
 <p>Este proyecto ha sido financiado por el Ministerio de Ciencia e Innovación</p>
@@ -222,15 +91,15 @@
 <img src="assets/logo-ugr.png" /></p>
 <!--chapter:end:index.Rmd-->
 </div>
-<div id="interfaz" class="section level1 hasAnchor" number="2">
-<h1 class="hasAnchor"><span class="header-section-number">2</span> Interfaz de MonitorEO-EarthCul<a href="#interfaz" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="interfaz" class="section level1" number="2">
+<h1><span class="header-section-number">2</span> Interfaz de MonitorEO-EarthCul</h1>
 <p>La interfaz gráfica del <strong>Laboratorio de Investigación Virtual MonitorEO-EarthCul</strong> (<em>Monitoring with Earth Observations</em> del <strong>Proyecto EarthCul PID2020-118041GB-I00</strong>) ha sido diseñado para la observación de <strong>servicios ecosistémicos culturales</strong>. La interfaz permite la exploración espacial y temporal de las cartografías generadas por el proyecto en diferentes áreas protegidas de montaña.</p>
 <p>MonitorEO-EarthCul integra colecciones de datos satelitales, herramientas de análisis geoespacial y una interfaz interactiva que facilita su uso tanto en estudios científicos como en aplicaciones de gestión.</p>
 <p><img src="assets/InterfazMonitorEO_es.png" /></p>
 <!--chapter:end:01-interfaz.Rmd-->
 </div>
-<div id="idiomas" class="section level1 hasAnchor" number="3">
-<h1 class="hasAnchor"><span class="header-section-number">3</span> Idiomas<a href="#idiomas" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="idiomas" class="section level1" number="3">
+<h1><span class="header-section-number">3</span> Idiomas</h1>
 <p>🌐 Selecciona el idioma de la interfaz. Están disponibles las siguientes opciones:</p>
 <p><img src="assets/Idiomas.png" /></p>
 <ul>
@@ -245,18 +114,18 @@ Deutsch</p></li>
 </ul>
 <!--chapter:end:02-idioma.Rmd-->
 </div>
-<div id="area-estudio" class="section level1 hasAnchor" number="4">
-<h1 class="hasAnchor"><span class="header-section-number">4</span> Área de estudio<a href="#area-estudio" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="area-estudio" class="section level1" number="4">
+<h1><span class="header-section-number">4</span> Área de estudio</h1>
 <p><strong>Selecciona ROI– Elige tu área de estudio.</strong></p>
 <p>En esta sección puedes definir la <strong>región de interés (ROI)</strong> sobre la que se realizará el análisis. Tienes varias opciones disponibles para seleccionar o cargar tu área de estudio.</p>
 <p><img src="assets/ROI_es.png" /></p>
-<div id="parque-nacional-earthcul" class="section level2 hasAnchor" number="4.1">
-<h2 class="hasAnchor"><span class="header-section-number">4.1</span> <strong>🏞️ Parque Nacional EarthCul</strong><a href="#parque-nacional-earthcul" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="parque-nacional-earthcul" class="section level2" number="4.1">
+<h2><span class="header-section-number">4.1</span> <strong>🏞️ Parque Nacional EarthCul</strong></h2>
 <p>Puedes seleccionar como área de estudio cualquiera de los <strong>Parques Nacionales de España y Portugal</strong> disponibles en la plataforma.</p>
 <p><img src="assets/np_es.png" /></p>
 </div>
-<div id="área-de-influencia-socioeconómica-parques-earthcul" class="section level2 hasAnchor" number="4.2">
-<h2 class="hasAnchor"><span class="header-section-number">4.2</span> <strong>📁 Área de influencia socioeconómica parques EarthCul</strong><a href="#área-de-influencia-socioeconómica-parques-earthcul" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="área-de-influencia-socioeconómica-parques-earthcul" class="section level2" number="4.2">
+<h2><span class="header-section-number">4.2</span> <strong>📁 Área de influencia socioeconómica parques EarthCul</strong></h2>
 <p>Puedes seleccionar como área de estudio las zonas asociadas al proyecto:</p>
 <ul>
 <li><strong>EarthCul</strong>: Áreas de influencia socioeconómica de los Parques Nacionales de montaña en España y Portugal.</li>
@@ -265,12 +134,12 @@ Deutsch</p></li>
 <!--chapter:end:03-area-estudio.Rmd-->
 </div>
 </div>
-<div id="fechas" class="section level1 hasAnchor" number="5">
-<h1 class="hasAnchor"><span class="header-section-number">5</span> Fechas de inicio y fin<a href="#fechas" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="fechas" class="section level1" number="5">
+<h1><span class="header-section-number">5</span> Fechas de inicio y fin</h1>
 <p>Elige el rango de fechas para realizar tus cálculos. Primero, establece el <strong>año de inicio</strong> y el <strong>año de fin</strong>. Luego, selecciona el <strong>mes y día de inicio</strong>, así como el <strong>mes y día de finalización</strong> para definir el período de análisis.</p>
 <p><img src="assets/dates_es.png" /></p>
-<div id="selección-de-un-intervalo-específico" class="section level2 hasAnchor" number="5.1">
-<h2 class="hasAnchor"><span class="header-section-number">5.1</span> <strong>📆Selección de un intervalo específico</strong><a href="#selección-de-un-intervalo-específico" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="selección-de-un-intervalo-específico" class="section level2" number="5.1">
+<h2><span class="header-section-number">5.1</span> <strong>📆Selección de un intervalo específico</strong></h2>
 <p>La herramienta permite seleccionar un <strong>intervalo específico dentro del año</strong> para realizar un análisis estacional.</p>
 <p>Al activar la opción <strong>“Utilice solo los días de este periodo del año”</strong>, se delimita un rango de fechas (por ejemplo, del <strong>21 de marzo al 21 de septiembre)</strong> que se aplicará a <strong>cada año</strong> del periodo seleccionado (por ejemplo, de 2001 a 2020).</p>
 <p>Esto permite analizar únicamente ciertos meses o estaciones, como <strong>primaveras, veranos, o estaciones de crecimiento.</strong></p>
@@ -288,21 +157,21 @@ Deutsch</p></li>
 <!--chapter:end:04-periodo.Rmd-->
 </div>
 </div>
-<div id="tipo-variable" class="section level1 hasAnchor" number="6">
-<h1 class="hasAnchor"><span class="header-section-number">6</span> Tipo de variable de interés<a href="#tipo-variable" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="tipo-variable" class="section level1" number="6">
+<h1><span class="header-section-number">6</span> Tipo de variable de interés</h1>
 <p>Selecciona la variable de estudio. Las variables se clasifican en grandes categorías de <a href="https://geobon.org/ebvs/what-are-ebvs/">EBVs</a> {target=_blank} <strong>(Variables Esenciales de Biodiversidad)</strong>, relacionadas con el funcionamiento y estructura de los ecosistemas. <strong>MonitorEO-OBSNEV</strong> incluye:</p>
 <p><img src="assets/variables_es.png" /></p>
-<div id="carbono-orgánico-producción-primaria" class="section level2 hasAnchor" number="6.1">
-<h2 class="hasAnchor"><span class="header-section-number">6.1</span> <strong>🌱 Carbono Orgánico (Producción Primaria)</strong><a href="#carbono-orgánico-producción-primaria" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div id="ndvi---índice-de-vegetación-de-diferencia-normalizada" class="section level3 hasAnchor" number="6.1.1">
-<h3 class="hasAnchor"><span class="header-section-number">6.1.1</span> <strong>NDVI</strong> - Índice de Vegetación de Diferencia Normalizada<a href="#ndvi---índice-de-vegetación-de-diferencia-normalizada" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="carbono-orgánico-producción-primaria" class="section level2" number="6.1">
+<h2><span class="header-section-number">6.1</span> <strong>🌱 Carbono Orgánico (Producción Primaria)</strong></h2>
+<div id="ndvi---índice-de-vegetación-de-diferencia-normalizada" class="section level3" number="6.1.1">
+<h3><span class="header-section-number">6.1.1</span> <strong>NDVI</strong> - Índice de Vegetación de Diferencia Normalizada</h3>
 <p>El Índice de Vegetación de Diferencia Normalizada (NDVI, por sus siglas en inglés) es un indicador espectral ampliamente utilizado para cuantificar la cobertura y el estado de la vegetación mediante sensores remotos. Se calcula a partir de la diferencia entre la reflectancia en el infrarrojo cercano (NIR) y la reflectancia en el rojo (RED), normalizada por su suma:</p>
 <p>NDV I= NIR- RED / NIR + RED</p>
 <p>Este índice toma valores entre -1 y 1. Valores cercanos a 1 indican vegetación densa y vigorosa, mientras que valores cercanos a -1 corresponden a superficies no vegetadas, como cuerpos de agua, nieve o áreas urbanas.</p>
 <p>Unidades: sin unidad.</p>
 </div>
-<div id="evi---índice-de-vegetación-mejorado" class="section level3 hasAnchor" number="6.1.2">
-<h3 class="hasAnchor"><span class="header-section-number">6.1.2</span> <strong>EVI</strong> - Índice de Vegetación Mejorado<a href="#evi---índice-de-vegetación-mejorado" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="evi---índice-de-vegetación-mejorado" class="section level3" number="6.1.2">
+<h3><span class="header-section-number">6.1.2</span> <strong>EVI</strong> - Índice de Vegetación Mejorado</h3>
 <p>El Índice de Vegetación Mejorado (EVI, por sus siglas en inglés) es un indicador espectral desarrollado para optimizar la estimación de la cobertura y condición de la vegetación a partir de datos de teledetección. A diferencia de índices tradicionales como el NDVI, el EVI incorpora factores de corrección atmosférica y una compensación por la influencia del fondo del suelo, lo que mejora su sensibilidad en áreas con alta densidad de vegetación, baja cobertura vegetal o condiciones atmosféricas complejas.</p>
 <p>La fórmula general del EVI es la siguiente:</p>
 <p>EVI=G⋅ NIR−RED / NIR+C1​⋅RED−C2​⋅BLUE+L</p>
@@ -365,35 +234,35 @@ Deutsch</p></li>
 </table>
 <p>Unidades: sin unidad.</p>
 </div>
-<div id="chl-a---concentración-de-clorofila" class="section level3 hasAnchor" number="6.1.3">
-<h3 class="hasAnchor"><span class="header-section-number">6.1.3</span> <strong>Chl-a</strong> - Concentración de clorofila<a href="#chl-a---concentración-de-clorofila" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="chl-a---concentración-de-clorofila" class="section level3" number="6.1.3">
+<h3><span class="header-section-number">6.1.3</span> <strong>Chl-a</strong> - Concentración de clorofila</h3>
 <p>El índice de clorofila-a se utiliza para estimar la concentración de clorofila-a en cuerpos de agua como océanos, lagos y ríos. La clorofila-a es el principal pigmento fotosintético presente en el fitoplancton, por lo que su concentración actúa como un indicador indirecto de la biomasa algal y de la productividad primaria en ecosistemas acuáticos, siendo un indicador clave para evaluar la calidad del agua y la salud de los ecosistemas acuáticos (Gitelson et al., 1993; IOCCG, 2000).</p>
 <p>Unidades: mg m-3.</p>
 </div>
 </div>
-<div id="balance-de-radiación" class="section level2 hasAnchor" number="6.2">
-<h2 class="hasAnchor"><span class="header-section-number">6.2</span> <strong>🌞 Balance de Radiación</strong><a href="#balance-de-radiación" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div id="alb---albedo" class="section level3 hasAnchor" number="6.2.1">
-<h3 class="hasAnchor"><span class="header-section-number">6.2.1</span> <strong>ALB</strong> - Albedo<a href="#alb---albedo" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="balance-de-radiación" class="section level2" number="6.2">
+<h2><span class="header-section-number">6.2</span> <strong>🌞 Balance de Radiación</strong></h2>
+<div id="alb---albedo" class="section level3" number="6.2.1">
+<h3><span class="header-section-number">6.2.1</span> <strong>ALB</strong> - Albedo</h3>
 <p>El albedo es la fracción de la radiación solar incidente que es reflejada por una superficie sin ser absorbida. Se trata de un parámetro adimensional que varía entre 0 (absorción total) y 1 (reflexión total). Un albedo elevado indica que la superficie refleja una gran proporción de la energía solar recibida, como ocurre en superficies altamente reflectantes como la nieve o el hielo. En contraste, un albedo bajo implica una mayor absorción de radiación, característica de superficies oscuras como áreas urbanas, suelos húmedos o cuerpos de agua.<br />
 El albedo desempeña un papel clave en el balance energético terrestre y en procesos relacionados con el clima global, ya que influye directamente en la cantidad de energía que entra y se retiene en el sistema climático.</p>
 <p>Unidades: sin unidad.</p>
 </div>
 </div>
-<div id="balance-de-agua" class="section level2 hasAnchor" number="6.3">
-<h2 class="hasAnchor"><span class="header-section-number">6.3</span> <strong>💧Balance de Agua</strong><a href="#balance-de-agua" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div id="et---evapotranspiración" class="section level3 hasAnchor" number="6.3.1">
-<h3 class="hasAnchor"><span class="header-section-number">6.3.1</span> <strong>ET</strong> - Evapotranspiración<a href="#et---evapotranspiración" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="balance-de-agua" class="section level2" number="6.3">
+<h2><span class="header-section-number">6.3</span> <strong>💧Balance de Agua</strong></h2>
+<div id="et---evapotranspiración" class="section level3" number="6.3.1">
+<h3><span class="header-section-number">6.3.1</span> <strong>ET</strong> - Evapotranspiración</h3>
 <p>Estimación de la cantidad de agua que se evapora de la superficie terrestre y se transpira por las plantas. Generada a partir del modelo Mu et al. (2011), que implementa un enfoque basado en la ecuación de Penman-Monteith, adaptada para sensores remotos. Permite comprender el ciclo del agua, evaluar la disponibilidad de agua en una región y monitorear los recursos hídricos.</p>
 <p>Unidades: Kj/m^2/8days</p>
 </div>
-<div id="le---calor-latente" class="section level3 hasAnchor" number="6.3.2">
-<h3 class="hasAnchor"><span class="header-section-number">6.3.2</span> <strong>LE</strong> - Calor Latente<a href="#le---calor-latente" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="le---calor-latente" class="section level3" number="6.3.2">
+<h3><span class="header-section-number">6.3.2</span> <strong>LE</strong> - Calor Latente</h3>
 <p>Estimación indirecta de la energía consumida por la evapotranspiración. Durante el proceso, se requiere energía para romper o formar enlaces entre las moléculas de la sustancia, lo que resulta en la liberación o absorción de calor. El calor latente desempeña un papel fundamental en el ciclo del agua, ya que la evaporación y la condensación son procesos clave en la formación de nubes, la precipitación y la regulación del clima.</p>
 <p>Unidades: J/m^2/day</p>
 </div>
-<div id="lswi---índice-de-agua-superficial-terrestre" class="section level3 hasAnchor" number="6.3.3">
-<h3 class="hasAnchor"><span class="header-section-number">6.3.3</span> <strong>LSWI</strong> - Índice de Agua Superficial Terrestre<a href="#lswi---índice-de-agua-superficial-terrestre" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="lswi---índice-de-agua-superficial-terrestre" class="section level3" number="6.3.3">
+<h3><span class="header-section-number">6.3.3</span> <strong>LSWI</strong> - Índice de Agua Superficial Terrestre</h3>
 <p>El LSWI (Land Surface Water Index) es un índice espectral utilizado para detectar y evaluar la presencia de humedad en la superficie terrestre, particularmente en la vegetación y el suelo. Se basa en la diferencia entre la reflectancia en el infrarrojo cercano (NIR) y el infrarrojo de onda corta (SWIR), que son sensibles al contenido de agua en la vegetación y el suelo.</p>
 <p>LSWI = NIR- SWIR / NIR + SWIR​</p>
 <ul>
@@ -404,8 +273,8 @@ El albedo desempeña un papel clave en el balance energético terrestre y en pro
 <p><strong>Valores bajos</strong> → condiciones secas, vegetación estresada o suelos áridos.</p>
 <p>Unidades: sin unidad.</p>
 </div>
-<div id="ndwi---índice-de-agua-de-diferencia-normalizada" class="section level3 hasAnchor" number="6.3.4">
-<h3 class="hasAnchor"><span class="header-section-number">6.3.4</span> <strong>NDWI</strong> - Índice de Agua de Diferencia Normalizada<a href="#ndwi---índice-de-agua-de-diferencia-normalizada" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="ndwi---índice-de-agua-de-diferencia-normalizada" class="section level3" number="6.3.4">
+<h3><span class="header-section-number">6.3.4</span> <strong>NDWI</strong> - Índice de Agua de Diferencia Normalizada</h3>
 <p>El NDWI ( Normalized Difference Water Index) es un índice espectral diseñado para detectar y cuantificar la presencia de agua en la superficie terrestre. Se basa en la diferencia de reflectancia entre el infrarrojo cercano (NIR) y el verde (Green), aprovechando la fuerte absorción del agua en el NIR y su alta reflectancia en el visible.</p>
 <p>NDWI = Green - NIR / Green + NIR​</p>
 <ul>
@@ -417,8 +286,8 @@ El albedo desempeña un papel clave en el balance energético terrestre y en pro
 <strong>NDWI &lt; 0</strong> → superficies <strong>terrestres sin agua</strong> (vegetación, suelo desnudo, áreas urbanas)</p>
 <p>Unidades: sin unidad.</p>
 </div>
-<div id="ndsi---índice-de-nieve-de-diferencia-normalizada" class="section level3 hasAnchor" number="6.3.5">
-<h3 class="hasAnchor"><span class="header-section-number">6.3.5</span> <strong>NDSI</strong> - Índice de Nieve de Diferencia Normalizada<a href="#ndsi---índice-de-nieve-de-diferencia-normalizada" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="ndsi---índice-de-nieve-de-diferencia-normalizada" class="section level3" number="6.3.5">
+<h3><span class="header-section-number">6.3.5</span> <strong>NDSI</strong> - Índice de Nieve de Diferencia Normalizada</h3>
 <p>El NDSI ( Normalized Difference Snow Index) es un indicador espectral utilizado para detectar la presencia y extensión de nieve en la superficie terrestre. Se basa en las características reflectivas distintivas de la nieve, que refleja fuertemente en el espectro visible (banda verde) y absorbe significativamente en el infrarrojo de onda corta (SWIR), en contraste con la mayoría de los demás tipos de cobertura terrestre.</p>
 <p>NDSI = Green - SWIR / Green + SWIR​</p>
 <ul>
@@ -432,26 +301,26 @@ El albedo desempeña un papel clave en el balance energético terrestre y en pro
 <p>Unidades: sin unidad.</p>
 </div>
 </div>
-<div id="calor-sensible" class="section level2 hasAnchor" number="6.4">
-<h2 class="hasAnchor"><span class="header-section-number">6.4</span> <strong>🌡️ Calor Sensible</strong><a href="#calor-sensible" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div id="lst--temperatura-superficial" class="section level3 hasAnchor" number="6.4.1">
-<h3 class="hasAnchor"><span class="header-section-number">6.4.1</span> <strong>LST</strong> -Temperatura Superficial<a href="#lst--temperatura-superficial" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="calor-sensible" class="section level2" number="6.4">
+<h2><span class="header-section-number">6.4</span> <strong>🌡️ Calor Sensible</strong></h2>
+<div id="lst--temperatura-superficial" class="section level3" number="6.4.1">
+<h3><span class="header-section-number">6.4.1</span> <strong>LST</strong> -Temperatura Superficial</h3>
 <p>La temperatura de la superficie terrestre (LST, por sus siglas en inglés) se refiere a la temperatura registrada en la capa superior de la superficie terrestre o de los cuerpos de agua, tal como es detectada por sensores remotos. LST se estima a partir de la radiancia térmica captada en el espectro del infrarrojo térmico, y es una variable clave en el análisis de procesos como el balance energético, la evapotranspiración, la sequía, el estrés hídrico y el monitoreo urbano y agrícola.</p>
 <p>Unidades: ºC.</p>
 </div>
 </div>
-<div id="nutrientes-aerosoles" class="section level2 hasAnchor" number="6.5">
-<h2 class="hasAnchor"><span class="header-section-number">6.5</span> <strong>💨 Nutrientes / Aerosoles</strong><a href="#nutrientes-aerosoles" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div id="arsl---profundidad-óptica-atmosférica-de-aerosoles" class="section level3 hasAnchor" number="6.5.1">
-<h3 class="hasAnchor"><span class="header-section-number">6.5.1</span> <strong>ARSL</strong> - Profundidad óptica atmosférica de aerosoles<a href="#arsl---profundidad-óptica-atmosférica-de-aerosoles" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="nutrientes-aerosoles" class="section level2" number="6.5">
+<h2><span class="header-section-number">6.5</span> <strong>💨 Nutrientes / Aerosoles</strong></h2>
+<div id="arsl---profundidad-óptica-atmosférica-de-aerosoles" class="section level3" number="6.5.1">
+<h3><span class="header-section-number">6.5.1</span> <strong>ARSL</strong> - Profundidad óptica atmosférica de aerosoles</h3>
 <p>Cantidad de aerosoles en la columna total atmosférica. Sirve para cuantificar cuánta carga de aerosoles hay en la atmósfera. El espesor óptico total de los aerosoles se refiere a todos los tipos de aerosol mientras que algunos productos de satélite dan información sobre el espesor óptico de un tipo de aerosol en concreto, como por ejemplo, el espesor óptico debido al polvo, que cuantifica la carga de polvo en la columna atmosférica.</p>
 <p>Unidades: sin unidad.</p>
 <!--chapter:end:05-tipo-variable.Rmd-->
 </div>
 </div>
 </div>
-<div id="sensor" class="section level1 hasAnchor" number="7">
-<h1 class="hasAnchor"><span class="header-section-number">7</span> Sensor satelital<a href="#sensor" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="sensor" class="section level1" number="7">
+<h1><span class="header-section-number">7</span> Sensor satelital</h1>
 <p>Selecciona con qué sensor quieres trabajar. Los sensores disponibles poseen distinta resolución temporal y espacial. Dependiendo de la variable elegida, obtendrás disponibilidad de datos para unos u otros sensores.</p>
 <p><img src="assets/sensor_es.png" /></p>
 <p><strong>🛰️MODIS 250 m, 16 días</strong></p>
@@ -478,8 +347,8 @@ El albedo desempeña un papel clave en el balance energético terrestre y en pro
 <p>El <strong>rango de fechas</strong> de este sensor va desde <strong>28/03/2017 hasta la actualidad.</strong></p>
 <!--chapter:end:06-sensor.Rmd-->
 </div>
-<div id="ud-agregacion-temporal" class="section level1 hasAnchor" number="8">
-<h1 class="hasAnchor"><span class="header-section-number">8</span> Unidad de agregación temporal<a href="#ud-agregacion-temporal" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="ud-agregacion-temporal" class="section level1" number="8">
+<h1><span class="header-section-number">8</span> Unidad de agregación temporal</h1>
 <p>Selecciona el intervalo temporal sobre el cual deseas realizar los cálculos. Puedes mantener la <strong>resolución temporal original del sensor</strong> o aplicar una <strong>agregación periódica</strong> para facilitar el análisis:</p>
 <p><img src="assets/aggregation_es.png" /></p>
 <p><strong>Original</strong></p>
@@ -496,8 +365,8 @@ perdida de información ocasionado por la presencia de nubes en el área de inte
 fechas concretas.</p>
 <!--chapter:end:07-agregacion-temporal.Rmd-->
 </div>
-<div id="agregacion-temporal" class="section level1 hasAnchor" number="9">
-<h1 class="hasAnchor"><span class="header-section-number">9</span> Métrica de agregación temporal<a href="#agregacion-temporal" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="agregacion-temporal" class="section level1" number="9">
+<h1><span class="header-section-number">9</span> Métrica de agregación temporal</h1>
 <p>Selecciona el <strong>método de agregación temporal</strong> que se aplicará al conjunto de datos. Esta opción permite <strong>resumir series temporales</strong> utilizando funciones estadísticas denominadas <strong>reductores</strong> (<em>reducers</em>), entre los que se encuentran:</p>
 <p><img src="assets/aggregationTime.png" /></p>
 <p><strong>Media</strong></p>
@@ -516,8 +385,8 @@ fechas concretas.</p>
 <p>Encuentra el valor por debajo del cual está el <strong>90% de los datos</strong>. Se usa para medir <strong>valores altos</strong> o eventos extremos.</p>
 <!--chapter:end:08-agregacion-espacial.Rmd-->
 </div>
-<div id="agregacion-temporal-interanual" class="section level1 hasAnchor" number="10">
-<h1 class="hasAnchor"><span class="header-section-number">10</span> Métrica de agregación temporal interanual<a href="#agregacion-temporal-interanual" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="agregacion-temporal-interanual" class="section level1" number="10">
+<h1><span class="header-section-number">10</span> Métrica de agregación temporal interanual</h1>
 <p>Selecciona el método de agregación temporal para ejecutar tu análisis. Los métodos de <strong>agregación temporal</strong> permiten <strong>resumir datos</strong> en períodos de tiempo utilizando diferentes técnicas estadísticas llamadas <strong>reductores</strong>.</p>
 <p><img src="assets/interannualAggregation.png" /></p>
 <p><strong>Media</strong></p>
@@ -532,38 +401,38 @@ fechas concretas.</p>
 <p>No calcula agregaciones temporales por años.</p>
 <!--chapter:end:09-agregacion-interanual.Rmd-->
 </div>
-<div id="filtrado-nubes" class="section level1 hasAnchor" number="11">
-<h1 class="hasAnchor"><span class="header-section-number">11</span> Filtrado de calidad<a href="#filtrado-nubes" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="filtrado-nubes" class="section level1" number="11">
+<h1><span class="header-section-number">11</span> Filtrado de calidad</h1>
 <p><img src="assets/filter.png" /></p>
 <p>Al activar esta casilla, se aplicará un <strong>filtrado de nubes por escena</strong>. El filtrado de nubes por escena es un proceso utilizado en el análisis de imágenes satelitales para eliminar o reducir la interferencia causada por la presencia de nubes en cada imagen, mejorando la calidad de los datos. Como resultado, los análisis reflejarán con mayor precisión las características reales de la superficie terrestre.</p>
 <p>Puedes establecer un % de nubosidad, que eliminará las escenas o imágenes que superen el umbral establecido.</p>
 <!--chapter:end:10-filtrado-nubes.Rmd-->
 </div>
-<div id="mapas-graficos" class="section level1 hasAnchor" number="12">
-<h1 class="hasAnchor"><span class="header-section-number">12</span> Generar mapas y gráficos de resultados<a href="#mapas-graficos" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<div id="calcular" class="section level2 hasAnchor" number="12.1">
-<h2 class="hasAnchor"><span class="header-section-number">12.1</span> <strong>Calcular</strong><a href="#calcular" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="mapas-graficos" class="section level1" number="12">
+<h1><span class="header-section-number">12</span> Generar mapas y gráficos de resultados</h1>
+<div id="calcular" class="section level2" number="12.1">
+<h2><span class="header-section-number">12.1</span> <strong>Calcular</strong></h2>
 <p>Al hacer clic en el botón se generará el resultado según tu selección previa.</p>
 <p><img src="assets/message_es.png" /></p>
 </div>
-<div id="seleccionar-capa" class="section level2 hasAnchor" number="12.2">
-<h2 class="hasAnchor"><span class="header-section-number">12.2</span> <strong>Seleccionar capa</strong><a href="#seleccionar-capa" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="seleccionar-capa" class="section level2" number="12.2">
+<h2><span class="header-section-number">12.2</span> <strong>Seleccionar capa</strong></h2>
 <p>En la sección aparecerán todas las capas/mapas generados durante el cálculo. Para visualizar una capa específica, selecciónala en <strong>“2- Seleccionar capa”</strong> y haz clic en <strong>“3 - Añadir al mapa”</strong>.</p>
 <p><img src="assets/layers_es.png" /></p>
 </div>
-<div id="añadir-al-mapa" class="section level2 hasAnchor" number="12.3">
-<h2 class="hasAnchor"><span class="header-section-number">12.3</span> <strong>Añadir al mapa</strong><a href="#añadir-al-mapa" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="añadir-al-mapa" class="section level2" number="12.3">
+<h2><span class="header-section-number">12.3</span> <strong>Añadir al mapa</strong></h2>
 <p>Dibuja en el mapa la capa seleccionada.</p>
 <p><img src="assets/layers_es2.png" />
 <img src="assets/leyenda_es.png" /></p>
 </div>
-<div id="gráfico-roi" class="section level2 hasAnchor" number="12.4">
-<h2 class="hasAnchor"><span class="header-section-number">12.4</span> <strong>Gráfico ROI</strong><a href="#gráfico-roi" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="gráfico-roi" class="section level2" number="12.4">
+<h2><span class="header-section-number">12.4</span> <strong>Gráfico ROI</strong></h2>
 <p>Genera y visualiza los gráficos asociados a los mapas resultantes de tu Región de Interés (ROI por su siglas en inglés). Genera un calculo promedio.</p>
 <p><img src="assets/graphs_es.png" /></p>
 </div>
-<div id="gráfico-pixel" class="section level2 hasAnchor" number="12.5">
-<h2 class="hasAnchor"><span class="header-section-number">12.5</span> <strong>Gráfico Pixel</strong><a href="#gráfico-pixel" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="gráfico-pixel" class="section level2" number="12.5">
+<h2><span class="header-section-number">12.5</span> <strong>Gráfico Pixel</strong></h2>
 <p>Genera y visualiza los gráficos asociados a un píxel seleccionado con tu cursor. Cuando pinchas en un punto de tu área de estudio, esta opción te mostrará los datos correspondientes a su Latitud, Longitud, m/píxel (muestra la resolución del mapa en ese nivel de zoom, en metros por píxel) y el nombre de la capa que estás visualizando.</p>
 <p><img src="assets/chart_pixel_es.png" /></p>
 <!--chapter:end:11-mapas-graficos.Rmd-->
@@ -573,8 +442,8 @@ fechas concretas.</p>
 </div>
 </div>
 </div>
-<div id="intro" class="section level1 hasAnchor" number="13">
-<h1 class="hasAnchor"><span class="header-section-number">13</span> Introducción<a href="#intro" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="intro" class="section level1" number="13">
+<h1><span class="header-section-number">13</span> Introducción</h1>
 <p>MonitorEO-EarthCul es una herramienta de análisis de variables derivadas de teledetección satelital basada en Google Earth Engine desarrollada por proyecto EarthCul PID2020-118041GB-I00.</p>
 <p>Este manual de usuario proporciona una guía completa para el uso de MonitorEO-EarthCul, incluyendo la descripción de funcionalidades, navegación por la interfaz, selección de parámetros y visualización de resultados.</p>
 <p>Este proyecto ha sido financiado por el Ministerio de Ciencia e Innovación</p>
@@ -583,16 +452,16 @@ fechas concretas.</p>
 <!--chapter:end:index.Rmd-->
 <p><img src="assets/logo.jpeg" /></p>
 </div>
-<div id="interfaz" class="section level1 hasAnchor" number="14">
-<h1 class="hasAnchor"><span class="header-section-number">14</span> Interfaz de MonitorEO-EarthCul<a href="#interfaz" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="interfaz" class="section level1" number="14">
+<h1><span class="header-section-number">14</span> Interfaz de MonitorEO-EarthCul</h1>
 <p>La interfaz gráfica del <strong>Laboratorio de Investigación Virtual MonitorEO-EarthCul</strong> (<em>Monitoring with Earth Observations</em> del <strong>Proyecto EarthCul PID2020-118041GB-I00</strong>) ha sido diseñado para la observación de <strong>servicios ecosistémicos culturales</strong>. La interfaz permite la exploración espacial y temporal de las cartografías generadas por el proyecto en diferentes áreas protegidas de montaña.</p>
 <p>MonitorEO-EarthCul integra colecciones de datos satelitales, herramientas de análisis geoespacial y una interfaz interactiva que facilita su uso tanto en estudios científicos como en aplicaciones de gestión.</p>
 <p><img src="assets/InterfazMonitorEO_es.png" /></p>
 <!--chapter:end:01-interfaz.Rmd-->
 <p><img src="assets/logo.jpeg" /></p>
 </div>
-<div id="idiomas" class="section level1 hasAnchor" number="15">
-<h1 class="hasAnchor"><span class="header-section-number">15</span> Idiomas<a href="#idiomas" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="idiomas" class="section level1" number="15">
+<h1><span class="header-section-number">15</span> Idiomas</h1>
 <p>🌐 Selecciona el idioma de la interfaz. Están disponibles las siguientes opciones:</p>
 <p><img src="assets/Idiomas.png" /></p>
 <ul>
@@ -608,18 +477,18 @@ Deutsch</p></li>
 <!--chapter:end:02-idioma.Rmd-->
 <p><img src="assets/logo.jpeg" /></p>
 </div>
-<div id="area-estudio" class="section level1 hasAnchor" number="16">
-<h1 class="hasAnchor"><span class="header-section-number">16</span> Área de estudio<a href="#area-estudio" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="area-estudio" class="section level1" number="16">
+<h1><span class="header-section-number">16</span> Área de estudio</h1>
 <p><strong>Selecciona ROI– Elige tu área de estudio.</strong></p>
 <p>En esta sección puedes definir la <strong>región de interés (ROI)</strong> sobre la que se realizará el análisis. Tienes varias opciones disponibles para seleccionar o cargar tu área de estudio.</p>
 <p><img src="assets/ROI_es.png" /></p>
-<div id="parque-nacional-earthcul-1" class="section level2 hasAnchor" number="16.1">
-<h2 class="hasAnchor"><span class="header-section-number">16.1</span> <strong>🏞️ Parque Nacional EarthCul</strong><a href="#parque-nacional-earthcul-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="parque-nacional-earthcul-1" class="section level2" number="16.1">
+<h2><span class="header-section-number">16.1</span> <strong>🏞️ Parque Nacional EarthCul</strong></h2>
 <p>Puedes seleccionar como área de estudio cualquiera de los <strong>Parques Nacionales de España y Portugal</strong> disponibles en la plataforma.</p>
 <p><img src="assets/np_es.png" /></p>
 </div>
-<div id="área-de-influencia-socioeconómica-parques-earthcul-1" class="section level2 hasAnchor" number="16.2">
-<h2 class="hasAnchor"><span class="header-section-number">16.2</span> <strong>📁 Área de influencia socioeconómica parques EarthCul</strong><a href="#área-de-influencia-socioeconómica-parques-earthcul-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="área-de-influencia-socioeconómica-parques-earthcul-1" class="section level2" number="16.2">
+<h2><span class="header-section-number">16.2</span> <strong>📁 Área de influencia socioeconómica parques EarthCul</strong></h2>
 <p>Puedes seleccionar como área de estudio las zonas asociadas al proyecto:</p>
 <ul>
 <li><strong>EarthCul</strong>: Áreas de influencia socioeconómica de los Parques Nacionales de montaña en España y Portugal.</li>
@@ -629,12 +498,12 @@ Deutsch</p></li>
 <p><img src="assets/logo.jpeg" /></p>
 </div>
 </div>
-<div id="fechas" class="section level1 hasAnchor" number="17">
-<h1 class="hasAnchor"><span class="header-section-number">17</span> Fechas de inicio y fin<a href="#fechas" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="fechas" class="section level1" number="17">
+<h1><span class="header-section-number">17</span> Fechas de inicio y fin</h1>
 <p>Elige el rango de fechas para realizar tus cálculos. Primero, establece el <strong>año de inicio</strong> y el <strong>año de fin</strong>. Luego, selecciona el <strong>mes y día de inicio</strong>, así como el <strong>mes y día de finalización</strong> para definir el período de análisis.</p>
 <p><img src="assets/dates_es.png" /></p>
-<div id="selección-de-un-intervalo-específico-1" class="section level2 hasAnchor" number="17.1">
-<h2 class="hasAnchor"><span class="header-section-number">17.1</span> <strong>📆Selección de un intervalo específico</strong><a href="#selección-de-un-intervalo-específico-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="selección-de-un-intervalo-específico-1" class="section level2" number="17.1">
+<h2><span class="header-section-number">17.1</span> <strong>📆Selección de un intervalo específico</strong></h2>
 <p>La herramienta permite seleccionar un <strong>intervalo específico dentro del año</strong> para realizar un análisis estacional.</p>
 <p>Al activar la opción <strong>“Utilice solo los días de este periodo del año”</strong>, se delimita un rango de fechas (por ejemplo, del <strong>21 de marzo al 21 de septiembre)</strong> que se aplicará a <strong>cada año</strong> del periodo seleccionado (por ejemplo, de 2001 a 2020).</p>
 <p>Esto permite analizar únicamente ciertos meses o estaciones, como <strong>primaveras, veranos, o estaciones de crecimiento.</strong></p>
@@ -653,21 +522,21 @@ Deutsch</p></li>
 <p><img src="assets/logo.jpeg" /></p>
 </div>
 </div>
-<div id="tipo-variable" class="section level1 hasAnchor" number="18">
-<h1 class="hasAnchor"><span class="header-section-number">18</span> Tipo de variable de interés<a href="#tipo-variable" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="tipo-variable" class="section level1" number="18">
+<h1><span class="header-section-number">18</span> Tipo de variable de interés</h1>
 <p>Selecciona la variable de estudio. Las variables se clasifican en grandes categorías de <a href="https://geobon.org/ebvs/what-are-ebvs/">EBVs</a> {target=_blank} <strong>(Variables Esenciales de Biodiversidad)</strong>, relacionadas con el funcionamiento y estructura de los ecosistemas. <strong>MonitorEO-OBSNEV</strong> incluye:</p>
 <p><img src="assets/variables_es.png" /></p>
-<div id="carbono-orgánico-producción-primaria-1" class="section level2 hasAnchor" number="18.1">
-<h2 class="hasAnchor"><span class="header-section-number">18.1</span> <strong>🌱 Carbono Orgánico (Producción Primaria)</strong><a href="#carbono-orgánico-producción-primaria-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div id="ndvi---índice-de-vegetación-de-diferencia-normalizada-1" class="section level3 hasAnchor" number="18.1.1">
-<h3 class="hasAnchor"><span class="header-section-number">18.1.1</span> <strong>NDVI</strong> - Índice de Vegetación de Diferencia Normalizada<a href="#ndvi---índice-de-vegetación-de-diferencia-normalizada-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="carbono-orgánico-producción-primaria-1" class="section level2" number="18.1">
+<h2><span class="header-section-number">18.1</span> <strong>🌱 Carbono Orgánico (Producción Primaria)</strong></h2>
+<div id="ndvi---índice-de-vegetación-de-diferencia-normalizada-1" class="section level3" number="18.1.1">
+<h3><span class="header-section-number">18.1.1</span> <strong>NDVI</strong> - Índice de Vegetación de Diferencia Normalizada</h3>
 <p>El Índice de Vegetación de Diferencia Normalizada (NDVI, por sus siglas en inglés) es un indicador espectral ampliamente utilizado para cuantificar la cobertura y el estado de la vegetación mediante sensores remotos. Se calcula a partir de la diferencia entre la reflectancia en el infrarrojo cercano (NIR) y la reflectancia en el rojo (RED), normalizada por su suma:</p>
 <p>NDV I= NIR- RED / NIR + RED</p>
 <p>Este índice toma valores entre -1 y 1. Valores cercanos a 1 indican vegetación densa y vigorosa, mientras que valores cercanos a -1 corresponden a superficies no vegetadas, como cuerpos de agua, nieve o áreas urbanas.</p>
 <p>Unidades: sin unidad.</p>
 </div>
-<div id="evi---índice-de-vegetación-mejorado-1" class="section level3 hasAnchor" number="18.1.2">
-<h3 class="hasAnchor"><span class="header-section-number">18.1.2</span> <strong>EVI</strong> - Índice de Vegetación Mejorado<a href="#evi---índice-de-vegetación-mejorado-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="evi---índice-de-vegetación-mejorado-1" class="section level3" number="18.1.2">
+<h3><span class="header-section-number">18.1.2</span> <strong>EVI</strong> - Índice de Vegetación Mejorado</h3>
 <p>El Índice de Vegetación Mejorado (EVI, por sus siglas en inglés) es un indicador espectral desarrollado para optimizar la estimación de la cobertura y condición de la vegetación a partir de datos de teledetección. A diferencia de índices tradicionales como el NDVI, el EVI incorpora factores de corrección atmosférica y una compensación por la influencia del fondo del suelo, lo que mejora su sensibilidad en áreas con alta densidad de vegetación, baja cobertura vegetal o condiciones atmosféricas complejas.</p>
 <p>La fórmula general del EVI es la siguiente:</p>
 <p>EVI=G⋅ NIR−RED / NIR+C1​⋅RED−C2​⋅BLUE+L</p>
@@ -730,35 +599,35 @@ Deutsch</p></li>
 </table>
 <p>Unidades: sin unidad.</p>
 </div>
-<div id="chl-a---concentración-de-clorofila-1" class="section level3 hasAnchor" number="18.1.3">
-<h3 class="hasAnchor"><span class="header-section-number">18.1.3</span> <strong>Chl-a</strong> - Concentración de clorofila<a href="#chl-a---concentración-de-clorofila-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="chl-a---concentración-de-clorofila-1" class="section level3" number="18.1.3">
+<h3><span class="header-section-number">18.1.3</span> <strong>Chl-a</strong> - Concentración de clorofila</h3>
 <p>El índice de clorofila-a se utiliza para estimar la concentración de clorofila-a en cuerpos de agua como océanos, lagos y ríos. La clorofila-a es el principal pigmento fotosintético presente en el fitoplancton, por lo que su concentración actúa como un indicador indirecto de la biomasa algal y de la productividad primaria en ecosistemas acuáticos, siendo un indicador clave para evaluar la calidad del agua y la salud de los ecosistemas acuáticos (Gitelson et al., 1993; IOCCG, 2000).</p>
 <p>Unidades: mg m-3.</p>
 </div>
 </div>
-<div id="balance-de-radiación-1" class="section level2 hasAnchor" number="18.2">
-<h2 class="hasAnchor"><span class="header-section-number">18.2</span> <strong>🌞 Balance de Radiación</strong><a href="#balance-de-radiación-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div id="alb---albedo-1" class="section level3 hasAnchor" number="18.2.1">
-<h3 class="hasAnchor"><span class="header-section-number">18.2.1</span> <strong>ALB</strong> - Albedo<a href="#alb---albedo-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="balance-de-radiación-1" class="section level2" number="18.2">
+<h2><span class="header-section-number">18.2</span> <strong>🌞 Balance de Radiación</strong></h2>
+<div id="alb---albedo-1" class="section level3" number="18.2.1">
+<h3><span class="header-section-number">18.2.1</span> <strong>ALB</strong> - Albedo</h3>
 <p>El albedo es la fracción de la radiación solar incidente que es reflejada por una superficie sin ser absorbida. Se trata de un parámetro adimensional que varía entre 0 (absorción total) y 1 (reflexión total). Un albedo elevado indica que la superficie refleja una gran proporción de la energía solar recibida, como ocurre en superficies altamente reflectantes como la nieve o el hielo. En contraste, un albedo bajo implica una mayor absorción de radiación, característica de superficies oscuras como áreas urbanas, suelos húmedos o cuerpos de agua.<br />
 El albedo desempeña un papel clave en el balance energético terrestre y en procesos relacionados con el clima global, ya que influye directamente en la cantidad de energía que entra y se retiene en el sistema climático.</p>
 <p>Unidades: sin unidad.</p>
 </div>
 </div>
-<div id="balance-de-agua-1" class="section level2 hasAnchor" number="18.3">
-<h2 class="hasAnchor"><span class="header-section-number">18.3</span> <strong>💧Balance de Agua</strong><a href="#balance-de-agua-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div id="et---evapotranspiración-1" class="section level3 hasAnchor" number="18.3.1">
-<h3 class="hasAnchor"><span class="header-section-number">18.3.1</span> <strong>ET</strong> - Evapotranspiración<a href="#et---evapotranspiración-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="balance-de-agua-1" class="section level2" number="18.3">
+<h2><span class="header-section-number">18.3</span> <strong>💧Balance de Agua</strong></h2>
+<div id="et---evapotranspiración-1" class="section level3" number="18.3.1">
+<h3><span class="header-section-number">18.3.1</span> <strong>ET</strong> - Evapotranspiración</h3>
 <p>Estimación de la cantidad de agua que se evapora de la superficie terrestre y se transpira por las plantas. Generada a partir del modelo Mu et al. (2011), que implementa un enfoque basado en la ecuación de Penman-Monteith, adaptada para sensores remotos. Permite comprender el ciclo del agua, evaluar la disponibilidad de agua en una región y monitorear los recursos hídricos.</p>
 <p>Unidades: Kj/m^2/8days</p>
 </div>
-<div id="le---calor-latente-1" class="section level3 hasAnchor" number="18.3.2">
-<h3 class="hasAnchor"><span class="header-section-number">18.3.2</span> <strong>LE</strong> - Calor Latente<a href="#le---calor-latente-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="le---calor-latente-1" class="section level3" number="18.3.2">
+<h3><span class="header-section-number">18.3.2</span> <strong>LE</strong> - Calor Latente</h3>
 <p>Estimación indirecta de la energía consumida por la evapotranspiración. Durante el proceso, se requiere energía para romper o formar enlaces entre las moléculas de la sustancia, lo que resulta en la liberación o absorción de calor. El calor latente desempeña un papel fundamental en el ciclo del agua, ya que la evaporación y la condensación son procesos clave en la formación de nubes, la precipitación y la regulación del clima.</p>
 <p>Unidades: J/m^2/day</p>
 </div>
-<div id="lswi---índice-de-agua-superficial-terrestre-1" class="section level3 hasAnchor" number="18.3.3">
-<h3 class="hasAnchor"><span class="header-section-number">18.3.3</span> <strong>LSWI</strong> - Índice de Agua Superficial Terrestre<a href="#lswi---índice-de-agua-superficial-terrestre-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="lswi---índice-de-agua-superficial-terrestre-1" class="section level3" number="18.3.3">
+<h3><span class="header-section-number">18.3.3</span> <strong>LSWI</strong> - Índice de Agua Superficial Terrestre</h3>
 <p>El LSWI (Land Surface Water Index) es un índice espectral utilizado para detectar y evaluar la presencia de humedad en la superficie terrestre, particularmente en la vegetación y el suelo. Se basa en la diferencia entre la reflectancia en el infrarrojo cercano (NIR) y el infrarrojo de onda corta (SWIR), que son sensibles al contenido de agua en la vegetación y el suelo.</p>
 <p>LSWI = NIR- SWIR / NIR + SWIR​</p>
 <ul>
@@ -769,8 +638,8 @@ El albedo desempeña un papel clave en el balance energético terrestre y en pro
 <p><strong>Valores bajos</strong> → condiciones secas, vegetación estresada o suelos áridos.</p>
 <p>Unidades: sin unidad.</p>
 </div>
-<div id="ndwi---índice-de-agua-de-diferencia-normalizada-1" class="section level3 hasAnchor" number="18.3.4">
-<h3 class="hasAnchor"><span class="header-section-number">18.3.4</span> <strong>NDWI</strong> - Índice de Agua de Diferencia Normalizada<a href="#ndwi---índice-de-agua-de-diferencia-normalizada-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="ndwi---índice-de-agua-de-diferencia-normalizada-1" class="section level3" number="18.3.4">
+<h3><span class="header-section-number">18.3.4</span> <strong>NDWI</strong> - Índice de Agua de Diferencia Normalizada</h3>
 <p>El NDWI ( Normalized Difference Water Index) es un índice espectral diseñado para detectar y cuantificar la presencia de agua en la superficie terrestre. Se basa en la diferencia de reflectancia entre el infrarrojo cercano (NIR) y el verde (Green), aprovechando la fuerte absorción del agua en el NIR y su alta reflectancia en el visible.</p>
 <p>NDWI = Green - NIR / Green + NIR​</p>
 <ul>
@@ -782,8 +651,8 @@ El albedo desempeña un papel clave en el balance energético terrestre y en pro
 <strong>NDWI &lt; 0</strong> → superficies <strong>terrestres sin agua</strong> (vegetación, suelo desnudo, áreas urbanas)</p>
 <p>Unidades: sin unidad.</p>
 </div>
-<div id="ndsi---índice-de-nieve-de-diferencia-normalizada-1" class="section level3 hasAnchor" number="18.3.5">
-<h3 class="hasAnchor"><span class="header-section-number">18.3.5</span> <strong>NDSI</strong> - Índice de Nieve de Diferencia Normalizada<a href="#ndsi---índice-de-nieve-de-diferencia-normalizada-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="ndsi---índice-de-nieve-de-diferencia-normalizada-1" class="section level3" number="18.3.5">
+<h3><span class="header-section-number">18.3.5</span> <strong>NDSI</strong> - Índice de Nieve de Diferencia Normalizada</h3>
 <p>El NDSI ( Normalized Difference Snow Index) es un indicador espectral utilizado para detectar la presencia y extensión de nieve en la superficie terrestre. Se basa en las características reflectivas distintivas de la nieve, que refleja fuertemente en el espectro visible (banda verde) y absorbe significativamente en el infrarrojo de onda corta (SWIR), en contraste con la mayoría de los demás tipos de cobertura terrestre.</p>
 <p>NDSI = Green - SWIR / Green + SWIR​</p>
 <ul>
@@ -797,18 +666,18 @@ El albedo desempeña un papel clave en el balance energético terrestre y en pro
 <p>Unidades: sin unidad.</p>
 </div>
 </div>
-<div id="calor-sensible-1" class="section level2 hasAnchor" number="18.4">
-<h2 class="hasAnchor"><span class="header-section-number">18.4</span> <strong>🌡️ Calor Sensible</strong><a href="#calor-sensible-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div id="lst--temperatura-superficial-1" class="section level3 hasAnchor" number="18.4.1">
-<h3 class="hasAnchor"><span class="header-section-number">18.4.1</span> <strong>LST</strong> -Temperatura Superficial<a href="#lst--temperatura-superficial-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="calor-sensible-1" class="section level2" number="18.4">
+<h2><span class="header-section-number">18.4</span> <strong>🌡️ Calor Sensible</strong></h2>
+<div id="lst--temperatura-superficial-1" class="section level3" number="18.4.1">
+<h3><span class="header-section-number">18.4.1</span> <strong>LST</strong> -Temperatura Superficial</h3>
 <p>La temperatura de la superficie terrestre (LST, por sus siglas en inglés) se refiere a la temperatura registrada en la capa superior de la superficie terrestre o de los cuerpos de agua, tal como es detectada por sensores remotos. LST se estima a partir de la radiancia térmica captada en el espectro del infrarrojo térmico, y es una variable clave en el análisis de procesos como el balance energético, la evapotranspiración, la sequía, el estrés hídrico y el monitoreo urbano y agrícola.</p>
 <p>Unidades: ºC.</p>
 </div>
 </div>
-<div id="nutrientes-aerosoles-1" class="section level2 hasAnchor" number="18.5">
-<h2 class="hasAnchor"><span class="header-section-number">18.5</span> <strong>💨 Nutrientes / Aerosoles</strong><a href="#nutrientes-aerosoles-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div id="arsl---profundidad-óptica-atmosférica-de-aerosoles-1" class="section level3 hasAnchor" number="18.5.1">
-<h3 class="hasAnchor"><span class="header-section-number">18.5.1</span> <strong>ARSL</strong> - Profundidad óptica atmosférica de aerosoles<a href="#arsl---profundidad-óptica-atmosférica-de-aerosoles-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="nutrientes-aerosoles-1" class="section level2" number="18.5">
+<h2><span class="header-section-number">18.5</span> <strong>💨 Nutrientes / Aerosoles</strong></h2>
+<div id="arsl---profundidad-óptica-atmosférica-de-aerosoles-1" class="section level3" number="18.5.1">
+<h3><span class="header-section-number">18.5.1</span> <strong>ARSL</strong> - Profundidad óptica atmosférica de aerosoles</h3>
 <p>Cantidad de aerosoles en la columna total atmosférica. Sirve para cuantificar cuánta carga de aerosoles hay en la atmósfera. El espesor óptico total de los aerosoles se refiere a todos los tipos de aerosol mientras que algunos productos de satélite dan información sobre el espesor óptico de un tipo de aerosol en concreto, como por ejemplo, el espesor óptico debido al polvo, que cuantifica la carga de polvo en la columna atmosférica.</p>
 <p>Unidades: sin unidad.</p>
 <!--chapter:end:05-tipo-variable.Rmd-->
@@ -816,8 +685,8 @@ El albedo desempeña un papel clave en el balance energético terrestre y en pro
 </div>
 </div>
 </div>
-<div id="sensor" class="section level1 hasAnchor" number="19">
-<h1 class="hasAnchor"><span class="header-section-number">19</span> Sensor satelital<a href="#sensor" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="sensor" class="section level1" number="19">
+<h1><span class="header-section-number">19</span> Sensor satelital</h1>
 <p>Selecciona con qué sensor quieres trabajar. Los sensores disponibles poseen distinta resolución temporal y espacial. Dependiendo de la variable elegida, obtendrás disponibilidad de datos para unos u otros sensores.</p>
 <p><img src="assets/sensor_es.png" /></p>
 <p><strong>🛰️MODIS 250 m, 16 días</strong></p>
@@ -845,8 +714,8 @@ El albedo desempeña un papel clave en el balance energético terrestre y en pro
 <!--chapter:end:06-sensor.Rmd-->
 <p><img src="assets/logo.jpeg" /></p>
 </div>
-<div id="ud-agregacion-temporal" class="section level1 hasAnchor" number="20">
-<h1 class="hasAnchor"><span class="header-section-number">20</span> Unidad de agregación temporal<a href="#ud-agregacion-temporal" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="ud-agregacion-temporal" class="section level1" number="20">
+<h1><span class="header-section-number">20</span> Unidad de agregación temporal</h1>
 <p>Selecciona el intervalo temporal sobre el cual deseas realizar los cálculos. Puedes mantener la <strong>resolución temporal original del sensor</strong> o aplicar una <strong>agregación periódica</strong> para facilitar el análisis:</p>
 <p><img src="assets/aggregation_es.png" /></p>
 <p><strong>Original</strong></p>
@@ -864,8 +733,8 @@ fechas concretas.</p>
 <!--chapter:end:07-agregacion-temporal.Rmd-->
 <p><img src="assets/logo.jpeg" /></p>
 </div>
-<div id="agregacion-temporal" class="section level1 hasAnchor" number="21">
-<h1 class="hasAnchor"><span class="header-section-number">21</span> Métrica de agregación temporal<a href="#agregacion-temporal" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="agregacion-temporal" class="section level1" number="21">
+<h1><span class="header-section-number">21</span> Métrica de agregación temporal</h1>
 <p>Selecciona el <strong>método de agregación temporal</strong> que se aplicará al conjunto de datos. Esta opción permite <strong>resumir series temporales</strong> utilizando funciones estadísticas denominadas <strong>reductores</strong> (<em>reducers</em>), entre los que se encuentran:</p>
 <p><img src="assets/aggregationTime.png" /></p>
 <p><strong>Media</strong></p>
@@ -885,8 +754,8 @@ fechas concretas.</p>
 <!--chapter:end:08-agregacion-espacial.Rmd-->
 <p><img src="assets/logo.jpeg" /></p>
 </div>
-<div id="agregacion-temporal-interanual" class="section level1 hasAnchor" number="22">
-<h1 class="hasAnchor"><span class="header-section-number">22</span> Métrica de agregación temporal interanual<a href="#agregacion-temporal-interanual" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="agregacion-temporal-interanual" class="section level1" number="22">
+<h1><span class="header-section-number">22</span> Métrica de agregación temporal interanual</h1>
 <p>Selecciona el método de agregación temporal para ejecutar tu análisis. Los métodos de <strong>agregación temporal</strong> permiten <strong>resumir datos</strong> en períodos de tiempo utilizando diferentes técnicas estadísticas llamadas <strong>reductores</strong>.</p>
 <p><img src="assets/interannualAggregation.png" /></p>
 <p><strong>Media</strong></p>
@@ -902,8 +771,8 @@ fechas concretas.</p>
 <!--chapter:end:09-agregacion-interanual.Rmd-->
 <p><img src="assets/logo.jpeg" /></p>
 </div>
-<div id="filtrado-nubes" class="section level1 hasAnchor" number="23">
-<h1 class="hasAnchor"><span class="header-section-number">23</span> Filtrado de calidad<a href="#filtrado-nubes" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="filtrado-nubes" class="section level1" number="23">
+<h1><span class="header-section-number">23</span> Filtrado de calidad</h1>
 <p><img src="assets/filter.png" /></p>
 <p>Al activar esta casilla, se aplicará un <strong>filtrado de nubes por escena</strong>. El filtrado de nubes por escena es un proceso utilizado en el análisis de imágenes satelitales para eliminar o reducir la interferencia causada por la presencia de nubes en cada imagen, mejorando la calidad de los datos. Como resultado, los análisis reflejarán con mayor precisión las características reales de la superficie terrestre.</p>
 <p>Puedes establecer un % de nubosidad, que eliminará las escenas o imágenes que superen el umbral establecido.</p>
@@ -913,31 +782,31 @@ fechas concretas.</p>
 <div class="figcaption">Cabecera del manual</div>
 </div>
 </div>
-<div id="mapas-graficos" class="section level1 hasAnchor" number="24">
-<h1 class="hasAnchor"><span class="header-section-number">24</span> Generar mapas y gráficos de resultados<a href="#mapas-graficos" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<div id="calcular-1" class="section level2 hasAnchor" number="24.1">
-<h2 class="hasAnchor"><span class="header-section-number">24.1</span> <strong>Calcular</strong><a href="#calcular-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="mapas-graficos" class="section level1" number="24">
+<h1><span class="header-section-number">24</span> Generar mapas y gráficos de resultados</h1>
+<div id="calcular-1" class="section level2" number="24.1">
+<h2><span class="header-section-number">24.1</span> <strong>Calcular</strong></h2>
 <p>Al hacer clic en el botón se generará el resultado según tu selección previa.</p>
 <p><img src="assets/message_es.png" /></p>
 </div>
-<div id="seleccionar-capa-1" class="section level2 hasAnchor" number="24.2">
-<h2 class="hasAnchor"><span class="header-section-number">24.2</span> <strong>Seleccionar capa</strong><a href="#seleccionar-capa-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="seleccionar-capa-1" class="section level2" number="24.2">
+<h2><span class="header-section-number">24.2</span> <strong>Seleccionar capa</strong></h2>
 <p>En la sección aparecerán todas las capas/mapas generados durante el cálculo. Para visualizar una capa específica, selecciónala en <strong>“2- Seleccionar capa”</strong> y haz clic en <strong>“3 - Añadir al mapa”</strong>.</p>
 <p><img src="assets/layers_es.png" /></p>
 </div>
-<div id="añadir-al-mapa-1" class="section level2 hasAnchor" number="24.3">
-<h2 class="hasAnchor"><span class="header-section-number">24.3</span> <strong>Añadir al mapa</strong><a href="#añadir-al-mapa-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="añadir-al-mapa-1" class="section level2" number="24.3">
+<h2><span class="header-section-number">24.3</span> <strong>Añadir al mapa</strong></h2>
 <p>Dibuja en el mapa la capa seleccionada.</p>
 <p><img src="assets/layers_es2.png" />
 <img src="assets/leyenda_es.png" /></p>
 </div>
-<div id="gráfico-roi-1" class="section level2 hasAnchor" number="24.4">
-<h2 class="hasAnchor"><span class="header-section-number">24.4</span> <strong>Gráfico ROI</strong><a href="#gráfico-roi-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="gráfico-roi-1" class="section level2" number="24.4">
+<h2><span class="header-section-number">24.4</span> <strong>Gráfico ROI</strong></h2>
 <p>Genera y visualiza los gráficos asociados a los mapas resultantes de tu Región de Interés (ROI por su siglas en inglés). Genera un calculo promedio.</p>
 <p><img src="assets/graphs_es.png" /></p>
 </div>
-<div id="gráfico-pixel-1" class="section level2 hasAnchor" number="24.5">
-<h2 class="hasAnchor"><span class="header-section-number">24.5</span> <strong>Gráfico Pixel</strong><a href="#gráfico-pixel-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="gráfico-pixel-1" class="section level2" number="24.5">
+<h2><span class="header-section-number">24.5</span> <strong>Gráfico Pixel</strong></h2>
 <p>Genera y visualiza los gráficos asociados a un píxel seleccionado con tu cursor. Cuando pinchas en un punto de tu área de estudio, esta opción te mostrará los datos correspondientes a su Latitud, Longitud, m/píxel (muestra la resolución del mapa en ese nivel de zoom, en metros por píxel) y el nombre de la capa que estás visualizando.</p>
 <p><img src="assets/chart_pixel_es.png" /></p>
 <!--chapter:end:11-mapas-graficos.Rmd-->
@@ -945,16 +814,39 @@ fechas concretas.</p>
 </div>
 </div>
 <!--bookdown:body:end-->
-            </section>
+  </main>
 
-          </div>
-        </div>
+  <div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page">
+      <h2>On this page</h2>
+      <div id="book-on-this-page"></div>
+
+      <div class="book-extra">
+        <ul class="list-unstyled">
+          <li><a id="book-source" href="#">View source <i class="fab fa-github"></i></a></li>
+          <li><a id="book-edit" href="#">Edit this page <i class="fab fa-github"></i></a></li>
+        </ul>
       </div>
-<!--bookdown:link_prev-->
-<!--bookdown:link_next-->
-    </div>
+    </nav>
   </div>
-<!--bookdown:config-->
+
+</div>
+</div> <!-- .container -->
+
+<footer class="bg-primary text-light mt-5">
+  <div class="container"><div class="row">
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>"<strong>Manual de usuario de MonitorEO-EarthCul.</strong>" was written by EarthCul PID2020-118041GB-I00.. It was last built on 2025-04-23.</p>
+  </div>
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>This book was built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package.</p>
+  </div>
+
+</div></div>
+</footer>
+
 
 </body>
 
