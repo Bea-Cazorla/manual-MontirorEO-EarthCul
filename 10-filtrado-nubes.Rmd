@@ -1,4 +1,3 @@
-
 # Filtrado de calidad {#filtrado-nubes}
 
 ![](assets/filter.png)

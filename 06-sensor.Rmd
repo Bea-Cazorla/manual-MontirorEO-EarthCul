@@ -1,4 +1,3 @@
-
 # Sensor satelital {#sensor}
 
 Selecciona con qué sensor quieres trabajar. Los sensores disponibles poseen distinta resolución temporal y espacial. Dependiendo de la variable elegida, obtendrás disponibilidad de datos para unos u otros sensores. 

@@ -1,4 +1,3 @@
-
 # Idiomas {#idiomas}
 
 🌐 Selecciona el idioma de la interfaz. Están disponibles las siguientes opciones:

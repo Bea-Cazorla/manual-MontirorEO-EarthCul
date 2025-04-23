@@ -23,6 +23,4 @@ Este manual de usuario proporciona una guía completa para el uso de MonitorEO-E
 
 Este proyecto ha sido financiado por el Ministerio de Ciencia e Innovación
 
-
-![](assets/logoe.png)
 ![](assets/logo-ugr.png)

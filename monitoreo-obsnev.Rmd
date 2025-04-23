@@ -14,7 +14,6 @@ github-repo: monitoreo-earthcul.github.io/manual/
 description: "Documentación de la herramienta MonitorEO-EarthCul."
 ---
 
-![Cabecera del manual](assets/logo.jpeg)
 
 # Introducción {#intro}
 
@@ -25,12 +24,12 @@ Este manual de usuario proporciona una guía completa para el uso de MonitorEO-E
 Este proyecto ha sido financiado por el Ministerio de Ciencia e Innovación
 
 
-![](assets/logo.jpeg)
+![](assets/logoe.png)
 ![](assets/logo-ugr.png)
 
 <!--chapter:end:index.Rmd-->
 
-![](assets/logo.jpeg)
+![](assets/logoe.png)
 
 # Interfaz de MonitorEO-EarthCul {#interfaz}
 
@@ -42,7 +41,7 @@ MonitorEO-EarthCul integra colecciones de datos satelitales, herramientas de an�
 
 <!--chapter:end:01-interfaz.Rmd-->
 
-![](assets/logo.jpeg)
+![](assets/logoe.png)
 
 # Idiomas {#idiomas}
 
@@ -66,7 +65,7 @@ Deutsch
 
 <!--chapter:end:02-idioma.Rmd-->
 
-![](assets/logo.jpeg)
+![](assets/logoe.png)
 
 
 # Área de estudio {#area-estudio}
@@ -96,7 +95,7 @@ Puedes seleccionar como área de estudio las zonas asociadas al proyecto:
 
 <!--chapter:end:03-area-estudio.Rmd-->
 
-![](assets/logo.jpeg)
+![](assets/logoe.png)
 
 
 # Fechas de inicio y fin {#fechas}
@@ -126,7 +125,7 @@ Se analizarán sólo los días comprendidos entre el 21 de marzo y el 21 de sept
 
 <!--chapter:end:04-periodo.Rmd-->
 
-![](assets/logo.jpeg)
+![](assets/logoe.png)
 
 
 # Tipo de variable de interés {#tipo-variable}
@@ -278,7 +277,7 @@ Unidades: sin unidad.
 
 <!--chapter:end:05-tipo-variable.Rmd-->
 
-![](assets/logo.jpeg)
+![](assets/logoe.png)
 
 # Sensor satelital {#sensor}
 
@@ -326,7 +325,7 @@ El **rango de fechas** de este sensor va desde **28/03/2017 hasta la actualidad.
 
 <!--chapter:end:06-sensor.Rmd-->
 
-![](assets/logo.jpeg)
+![](assets/logoe.png)
 
 # Unidad de agregación temporal {#ud-agregacion-temporal}
 
@@ -361,7 +360,7 @@ fechas concretas.
 
 <!--chapter:end:07-agregacion-temporal.Rmd-->
 
-![](assets/logo.jpeg)
+![](assets/logoe.png)
 
 # Métrica de agregación temporal {#agregacion-temporal}
 
@@ -401,7 +400,7 @@ Encuentra el valor por debajo del cual está el **90% de los datos**. Se usa par
 
 <!--chapter:end:08-agregacion-espacial.Rmd-->
 
-![](assets/logo.jpeg)
+![](assets/logoe.png)
 
 # Métrica de agregación temporal interanual {#agregacion-temporal-interanual}
 
@@ -433,7 +432,7 @@ No calcula agregaciones temporales por años.
 
 <!--chapter:end:09-agregacion-interanual.Rmd-->
 
-![](assets/logo.jpeg)
+![](assets/logoe.png)
 
 # Filtrado de calidad {#filtrado-nubes}
 
@@ -447,7 +446,7 @@ Puedes establecer un % de nubosidad, que eliminará las escenas o imágenes que 
 
 <!--chapter:end:10-filtrado-nubes.Rmd-->
 
-![Cabecera del manual](assets/logo.jpeg)
+![](assets/logoe.png)
 
 
 # Generar mapas y gráficos de resultados {#mapas-graficos}

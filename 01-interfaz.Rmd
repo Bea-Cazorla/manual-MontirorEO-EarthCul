@@ -1,4 +1,3 @@
-
 # Interfaz de MonitorEO-EarthCul {#interfaz}
 
 La interfaz gráfica del **Laboratorio de Investigación Virtual MonitorEO-EarthCul** (*Monitoring with Earth Observations* del **Proyecto EarthCul PID2020-118041GB-I00**) ha sido diseñado para la observación de **servicios ecosistémicos culturales**. La interfaz permite la exploración espacial y temporal de las cartografías generadas por el proyecto en diferentes áreas protegidas de montaña.

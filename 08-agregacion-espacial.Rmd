@@ -1,4 +1,3 @@
-
 # Métrica de agregación temporal {#agregacion-temporal}
 
 Selecciona el **método de agregación temporal** que se aplicará al conjunto de datos. Esta opción permite **resumir series temporales** utilizando funciones estadísticas denominadas **reductores** (*reducers*), entre los que se encuentran:

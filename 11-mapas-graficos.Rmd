@@ -1,5 +1,4 @@
 # Generar mapas y gráficos de resultados {#mapas-graficos}
-
 ## **Calcular** 
 
 Al hacer clic en el botón se generará el resultado según tu selección previa.
