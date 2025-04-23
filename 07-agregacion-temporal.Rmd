@@ -1,4 +1,3 @@
-![](assets/logo.jpeg)
 
 # Unidad de agregación temporal {#ud-agregacion-temporal}
 

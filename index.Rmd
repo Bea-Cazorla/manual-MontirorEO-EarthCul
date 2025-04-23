@@ -14,7 +14,7 @@ github-repo: monitoreo-earthcul.github.io/manual/
 description: "Documentación de la herramienta MonitorEO-EarthCul."
 ---
 
-![Cabecera del manual](assets/logo.jpeg)
+![Cabecera del manual](assets/logoe.png)
 
 # Introducción {#intro}
 
@@ -25,5 +25,5 @@ Este manual de usuario proporciona una guía completa para el uso de MonitorEO-E
 Este proyecto ha sido financiado por el Ministerio de Ciencia e Innovación
 
 
-![](assets/logo.jpeg)
+![](assets/logoe.png)
 ![](assets/logo-ugr.png)

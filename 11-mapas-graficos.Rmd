@@ -1,6 +1,3 @@
-![Cabecera del manual](assets/logo.jpeg)
-
-
 # Generar mapas y gráficos de resultados {#mapas-graficos}
 
 ## **Calcular** 
